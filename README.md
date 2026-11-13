@@ -28,7 +28,7 @@ python3 -m playwright install --with-deps chromium
 python3 tests/browser_smoke.py
 ```
 
-前两条为画外环境准备，不需要在业务演示中安装依赖；基础容器只运行产品和标准库测试。`requirements-test.txt` 会被统一的依赖准备工具读取，并在冻结验证环境中提供浏览器工具。
+前两条是首次测试环境安装，完成后无需重复执行。基础容器只运行产品和标准库测试；浏览器测试在安装了 `requirements-test.txt` 与 Chromium 的开发环境运行。
 
 ## 容器
 
