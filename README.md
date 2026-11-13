@@ -20,6 +20,16 @@ python3 -m unittest discover -s tests -v
 
 测试涵盖领域口径、真实 HTTP 往返、错误筛选、跨进程存储及不可变保存。页面直接消费与测试相同的 API，不使用预录结果。
 
+浏览器验证工具与产品运行依赖分开锁定；准备一次后可重复执行筛选、保存、刷新回看和资料查阅：
+
+```sh
+python3 -m pip install -r requirements-test.txt
+python3 -m playwright install --with-deps chromium
+python3 tests/browser_smoke.py
+```
+
+前两条为画外环境准备，不需要在业务演示中安装依赖；基础容器只运行产品和标准库测试。`requirements-test.txt` 会被统一的依赖准备工具读取，并在冻结验证环境中提供浏览器工具。
+
 ## 容器
 
 ```sh
