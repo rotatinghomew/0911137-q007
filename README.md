@@ -4,7 +4,7 @@
 
 ## 运行
 
-需要 Python 3.11。应用运行只使用标准库，浏览器 JavaScript 无构建步骤。以下命令在项目根目录执行：
+需要 Python >=3.11,<3.12，不依赖特定补丁版本。应用运行只使用标准库，浏览器 JavaScript 无构建步骤。以下命令在项目根目录执行：
 
 ```sh
 python3 -m choice_lab
@@ -29,6 +29,8 @@ python3 tests/browser_smoke.py
 ```
 
 前两条是首次测试环境安装，完成后无需重复执行。基础容器只运行产品和标准库测试；浏览器测试在安装了 `requirements-test.txt` 与 Chromium 的开发环境运行。
+
+也可使用无第三方 JavaScript 依赖的 npm 工作区入口：`npm ci --ignore-scripts` 后，`npm start -- --host 127.0.0.1 --port 8080` 启动同一个 Python HTTP 服务，`npm run test:browser` 执行上述浏览器回归。npm 仅负责命令编排，不是产品运行依赖；不要把 `web/` 单独作为静态站点运行，页面需要同源 API。
 
 ## 容器
 

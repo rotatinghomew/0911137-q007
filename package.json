@@ -1,0 +1,9 @@
+{
+  "name": "choice-lab-workspace",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "python3 -m choice_lab",
+    "test:browser": "python3 tests/browser_smoke.py"
+  }
+}
