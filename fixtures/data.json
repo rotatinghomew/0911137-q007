@@ -1,0 +1,7323 @@
+{
+  "meta": {
+    "name": "门店选品试验室",
+    "description": "每次 visit 的 choice=null 是看过但未购买；offers 包含当次可见商品，available=false 表示不可售并排除出选择集，shown_at 是陈列信息可见时间。",
+    "groups": [
+      "甲店",
+      "乙店"
+    ],
+    "default_cutoff": 90,
+    "min_cutoff": 0,
+    "max_cutoff": 180
+  },
+  "tables": {
+    "visits": [
+      {
+        "visit": "v000",
+        "customer": "c0",
+        "store": "乙店",
+        "day": 1,
+        "choice": null
+      },
+      {
+        "visit": "v001",
+        "customer": "c1",
+        "store": "甲店",
+        "day": 2,
+        "choice": "i2"
+      },
+      {
+        "visit": "v002",
+        "customer": "c2",
+        "store": "乙店",
+        "day": 3,
+        "choice": "i4"
+      },
+      {
+        "visit": "v003",
+        "customer": "c3",
+        "store": "甲店",
+        "day": 4,
+        "choice": "i1"
+      },
+      {
+        "visit": "v004",
+        "customer": "c4",
+        "store": "乙店",
+        "day": 5,
+        "choice": null
+      },
+      {
+        "visit": "v005",
+        "customer": "c5",
+        "store": "甲店",
+        "day": 6,
+        "choice": null
+      },
+      {
+        "visit": "v006",
+        "customer": "c6",
+        "store": "乙店",
+        "day": 7,
+        "choice": "i1"
+      },
+      {
+        "visit": "v007",
+        "customer": "c7",
+        "store": "甲店",
+        "day": 8,
+        "choice": null
+      },
+      {
+        "visit": "v008",
+        "customer": "c8",
+        "store": "乙店",
+        "day": 9,
+        "choice": null
+      },
+      {
+        "visit": "v009",
+        "customer": "c9",
+        "store": "甲店",
+        "day": 10,
+        "choice": "i4"
+      },
+      {
+        "visit": "v010",
+        "customer": "c10",
+        "store": "乙店",
+        "day": 11,
+        "choice": null
+      },
+      {
+        "visit": "v011",
+        "customer": "c11",
+        "store": "甲店",
+        "day": 12,
+        "choice": "i1"
+      },
+      {
+        "visit": "v012",
+        "customer": "c12",
+        "store": "乙店",
+        "day": 13,
+        "choice": "i5"
+      },
+      {
+        "visit": "v013",
+        "customer": "c13",
+        "store": "甲店",
+        "day": 14,
+        "choice": "i1"
+      },
+      {
+        "visit": "v014",
+        "customer": "c14",
+        "store": "乙店",
+        "day": 15,
+        "choice": "i4"
+      },
+      {
+        "visit": "v015",
+        "customer": "c15",
+        "store": "甲店",
+        "day": 16,
+        "choice": "i2"
+      },
+      {
+        "visit": "v016",
+        "customer": "c16",
+        "store": "乙店",
+        "day": 17,
+        "choice": "i5"
+      },
+      {
+        "visit": "v017",
+        "customer": "c17",
+        "store": "甲店",
+        "day": 18,
+        "choice": "i1"
+      },
+      {
+        "visit": "v018",
+        "customer": "c18",
+        "store": "乙店",
+        "day": 19,
+        "choice": "i4"
+      },
+      {
+        "visit": "v019",
+        "customer": "c19",
+        "store": "甲店",
+        "day": 20,
+        "choice": null
+      },
+      {
+        "visit": "v020",
+        "customer": "c20",
+        "store": "乙店",
+        "day": 21,
+        "choice": "i5"
+      },
+      {
+        "visit": "v021",
+        "customer": "c21",
+        "store": "甲店",
+        "day": 22,
+        "choice": "i1"
+      },
+      {
+        "visit": "v022",
+        "customer": "c22",
+        "store": "乙店",
+        "day": 23,
+        "choice": "i3"
+      },
+      {
+        "visit": "v023",
+        "customer": "c23",
+        "store": "甲店",
+        "day": 24,
+        "choice": null
+      },
+      {
+        "visit": "v024",
+        "customer": "c24",
+        "store": "乙店",
+        "day": 25,
+        "choice": null
+      },
+      {
+        "visit": "v025",
+        "customer": "c25",
+        "store": "甲店",
+        "day": 26,
+        "choice": "i3"
+      },
+      {
+        "visit": "v026",
+        "customer": "c26",
+        "store": "乙店",
+        "day": 27,
+        "choice": null
+      },
+      {
+        "visit": "v027",
+        "customer": "c27",
+        "store": "甲店",
+        "day": 28,
+        "choice": "i3"
+      },
+      {
+        "visit": "v028",
+        "customer": "c28",
+        "store": "乙店",
+        "day": 29,
+        "choice": "i5"
+      },
+      {
+        "visit": "v029",
+        "customer": "c29",
+        "store": "甲店",
+        "day": 30,
+        "choice": "i2"
+      },
+      {
+        "visit": "v030",
+        "customer": "c30",
+        "store": "乙店",
+        "day": 31,
+        "choice": null
+      },
+      {
+        "visit": "v031",
+        "customer": "c31",
+        "store": "甲店",
+        "day": 32,
+        "choice": "i1"
+      },
+      {
+        "visit": "v032",
+        "customer": "c32",
+        "store": "乙店",
+        "day": 33,
+        "choice": null
+      },
+      {
+        "visit": "v033",
+        "customer": "c33",
+        "store": "甲店",
+        "day": 34,
+        "choice": "i4"
+      },
+      {
+        "visit": "v034",
+        "customer": "c34",
+        "store": "乙店",
+        "day": 35,
+        "choice": null
+      },
+      {
+        "visit": "v035",
+        "customer": "c35",
+        "store": "甲店",
+        "day": 36,
+        "choice": "i4"
+      },
+      {
+        "visit": "v036",
+        "customer": "c36",
+        "store": "乙店",
+        "day": 37,
+        "choice": null
+      },
+      {
+        "visit": "v037",
+        "customer": "c37",
+        "store": "甲店",
+        "day": 38,
+        "choice": "i3"
+      },
+      {
+        "visit": "v038",
+        "customer": "c38",
+        "store": "乙店",
+        "day": 39,
+        "choice": "i2"
+      },
+      {
+        "visit": "v039",
+        "customer": "c39",
+        "store": "甲店",
+        "day": 40,
+        "choice": null
+      },
+      {
+        "visit": "v040",
+        "customer": "c40",
+        "store": "乙店",
+        "day": 41,
+        "choice": "i5"
+      },
+      {
+        "visit": "v041",
+        "customer": "c41",
+        "store": "甲店",
+        "day": 42,
+        "choice": "i3"
+      },
+      {
+        "visit": "v042",
+        "customer": "c42",
+        "store": "乙店",
+        "day": 43,
+        "choice": "i4"
+      },
+      {
+        "visit": "v043",
+        "customer": "c43",
+        "store": "甲店",
+        "day": 44,
+        "choice": null
+      },
+      {
+        "visit": "v044",
+        "customer": "c44",
+        "store": "乙店",
+        "day": 45,
+        "choice": null
+      },
+      {
+        "visit": "v045",
+        "customer": "c45",
+        "store": "甲店",
+        "day": 46,
+        "choice": "i3"
+      },
+      {
+        "visit": "v046",
+        "customer": "c46",
+        "store": "乙店",
+        "day": 47,
+        "choice": "i1"
+      },
+      {
+        "visit": "v047",
+        "customer": "c47",
+        "store": "甲店",
+        "day": 48,
+        "choice": "i1"
+      },
+      {
+        "visit": "v048",
+        "customer": "c48",
+        "store": "乙店",
+        "day": 49,
+        "choice": null
+      },
+      {
+        "visit": "v049",
+        "customer": "c49",
+        "store": "甲店",
+        "day": 50,
+        "choice": null
+      },
+      {
+        "visit": "v050",
+        "customer": "c50",
+        "store": "乙店",
+        "day": 51,
+        "choice": "i2"
+      },
+      {
+        "visit": "v051",
+        "customer": "c51",
+        "store": "甲店",
+        "day": 52,
+        "choice": "i3"
+      },
+      {
+        "visit": "v052",
+        "customer": "c52",
+        "store": "乙店",
+        "day": 53,
+        "choice": null
+      },
+      {
+        "visit": "v053",
+        "customer": "c53",
+        "store": "甲店",
+        "day": 54,
+        "choice": "i4"
+      },
+      {
+        "visit": "v054",
+        "customer": "c54",
+        "store": "乙店",
+        "day": 55,
+        "choice": null
+      },
+      {
+        "visit": "v055",
+        "customer": "c55",
+        "store": "甲店",
+        "day": 56,
+        "choice": "i4"
+      },
+      {
+        "visit": "v056",
+        "customer": "c56",
+        "store": "乙店",
+        "day": 57,
+        "choice": null
+      },
+      {
+        "visit": "v057",
+        "customer": "c57",
+        "store": "甲店",
+        "day": 58,
+        "choice": "i4"
+      },
+      {
+        "visit": "v058",
+        "customer": "c58",
+        "store": "乙店",
+        "day": 59,
+        "choice": null
+      },
+      {
+        "visit": "v059",
+        "customer": "c59",
+        "store": "甲店",
+        "day": 60,
+        "choice": "i3"
+      },
+      {
+        "visit": "v060",
+        "customer": "c60",
+        "store": "乙店",
+        "day": 61,
+        "choice": "i5"
+      },
+      {
+        "visit": "v061",
+        "customer": "c61",
+        "store": "甲店",
+        "day": 62,
+        "choice": null
+      },
+      {
+        "visit": "v062",
+        "customer": "c62",
+        "store": "乙店",
+        "day": 63,
+        "choice": "i4"
+      },
+      {
+        "visit": "v063",
+        "customer": "c63",
+        "store": "甲店",
+        "day": 64,
+        "choice": null
+      },
+      {
+        "visit": "v064",
+        "customer": "c64",
+        "store": "乙店",
+        "day": 65,
+        "choice": "i5"
+      },
+      {
+        "visit": "v065",
+        "customer": "c0",
+        "store": "甲店",
+        "day": 66,
+        "choice": null
+      },
+      {
+        "visit": "v066",
+        "customer": "c1",
+        "store": "乙店",
+        "day": 67,
+        "choice": null
+      },
+      {
+        "visit": "v067",
+        "customer": "c2",
+        "store": "甲店",
+        "day": 68,
+        "choice": "i4"
+      },
+      {
+        "visit": "v068",
+        "customer": "c3",
+        "store": "乙店",
+        "day": 69,
+        "choice": "i5"
+      },
+      {
+        "visit": "v069",
+        "customer": "c4",
+        "store": "甲店",
+        "day": 70,
+        "choice": "i3"
+      },
+      {
+        "visit": "v070",
+        "customer": "c5",
+        "store": "乙店",
+        "day": 71,
+        "choice": "i4"
+      },
+      {
+        "visit": "v071",
+        "customer": "c6",
+        "store": "甲店",
+        "day": 72,
+        "choice": "i1"
+      },
+      {
+        "visit": "v072",
+        "customer": "c7",
+        "store": "乙店",
+        "day": 73,
+        "choice": null
+      },
+      {
+        "visit": "v073",
+        "customer": "c8",
+        "store": "甲店",
+        "day": 74,
+        "choice": "i4"
+      },
+      {
+        "visit": "v074",
+        "customer": "c9",
+        "store": "乙店",
+        "day": 75,
+        "choice": null
+      },
+      {
+        "visit": "v075",
+        "customer": "c10",
+        "store": "甲店",
+        "day": 76,
+        "choice": "i6"
+      },
+      {
+        "visit": "v076",
+        "customer": "c11",
+        "store": "乙店",
+        "day": 77,
+        "choice": "i5"
+      },
+      {
+        "visit": "v077",
+        "customer": "c12",
+        "store": "甲店",
+        "day": 78,
+        "choice": null
+      },
+      {
+        "visit": "v078",
+        "customer": "c13",
+        "store": "乙店",
+        "day": 79,
+        "choice": null
+      },
+      {
+        "visit": "v079",
+        "customer": "c14",
+        "store": "甲店",
+        "day": 80,
+        "choice": null
+      },
+      {
+        "visit": "v080",
+        "customer": "c15",
+        "store": "乙店",
+        "day": 81,
+        "choice": "i6"
+      },
+      {
+        "visit": "v081",
+        "customer": "c16",
+        "store": "甲店",
+        "day": 82,
+        "choice": "i4"
+      },
+      {
+        "visit": "v082",
+        "customer": "c17",
+        "store": "乙店",
+        "day": 83,
+        "choice": "i4"
+      },
+      {
+        "visit": "v083",
+        "customer": "c18",
+        "store": "甲店",
+        "day": 84,
+        "choice": null
+      },
+      {
+        "visit": "v084",
+        "customer": "c19",
+        "store": "乙店",
+        "day": 85,
+        "choice": "i5"
+      },
+      {
+        "visit": "v085",
+        "customer": "c20",
+        "store": "甲店",
+        "day": 86,
+        "choice": "i3"
+      },
+      {
+        "visit": "v086",
+        "customer": "c21",
+        "store": "乙店",
+        "day": 87,
+        "choice": "i1"
+      },
+      {
+        "visit": "v087",
+        "customer": "c22",
+        "store": "甲店",
+        "day": 88,
+        "choice": "i3"
+      },
+      {
+        "visit": "v088",
+        "customer": "c23",
+        "store": "乙店",
+        "day": 89,
+        "choice": null
+      },
+      {
+        "visit": "v089",
+        "customer": "c24",
+        "store": "甲店",
+        "day": 90,
+        "choice": "i2"
+      },
+      {
+        "visit": "v090",
+        "customer": "c25",
+        "store": "乙店",
+        "day": 1,
+        "choice": null
+      },
+      {
+        "visit": "v091",
+        "customer": "c26",
+        "store": "甲店",
+        "day": 2,
+        "choice": null
+      },
+      {
+        "visit": "v092",
+        "customer": "c27",
+        "store": "乙店",
+        "day": 3,
+        "choice": "i5"
+      },
+      {
+        "visit": "v093",
+        "customer": "c28",
+        "store": "甲店",
+        "day": 4,
+        "choice": "i2"
+      },
+      {
+        "visit": "v094",
+        "customer": "c29",
+        "store": "乙店",
+        "day": 5,
+        "choice": null
+      },
+      {
+        "visit": "v095",
+        "customer": "c30",
+        "store": "甲店",
+        "day": 6,
+        "choice": "i1"
+      },
+      {
+        "visit": "v096",
+        "customer": "c31",
+        "store": "乙店",
+        "day": 7,
+        "choice": "i5"
+      },
+      {
+        "visit": "v097",
+        "customer": "c32",
+        "store": "甲店",
+        "day": 8,
+        "choice": "i3"
+      },
+      {
+        "visit": "v098",
+        "customer": "c33",
+        "store": "乙店",
+        "day": 9,
+        "choice": "i4"
+      },
+      {
+        "visit": "v099",
+        "customer": "c34",
+        "store": "甲店",
+        "day": 10,
+        "choice": null
+      },
+      {
+        "visit": "v100",
+        "customer": "c35",
+        "store": "乙店",
+        "day": 11,
+        "choice": null
+      },
+      {
+        "visit": "v101",
+        "customer": "c36",
+        "store": "甲店",
+        "day": 12,
+        "choice": "i2"
+      },
+      {
+        "visit": "v102",
+        "customer": "c37",
+        "store": "乙店",
+        "day": 13,
+        "choice": "i1"
+      },
+      {
+        "visit": "v103",
+        "customer": "c38",
+        "store": "甲店",
+        "day": 14,
+        "choice": null
+      },
+      {
+        "visit": "v104",
+        "customer": "c39",
+        "store": "乙店",
+        "day": 15,
+        "choice": "i5"
+      },
+      {
+        "visit": "v105",
+        "customer": "c40",
+        "store": "甲店",
+        "day": 16,
+        "choice": "i3"
+      },
+      {
+        "visit": "v106",
+        "customer": "c41",
+        "store": "乙店",
+        "day": 17,
+        "choice": null
+      },
+      {
+        "visit": "v107",
+        "customer": "c42",
+        "store": "甲店",
+        "day": 18,
+        "choice": null
+      },
+      {
+        "visit": "v108",
+        "customer": "c43",
+        "store": "乙店",
+        "day": 19,
+        "choice": "i5"
+      },
+      {
+        "visit": "v109",
+        "customer": "c44",
+        "store": "甲店",
+        "day": 20,
+        "choice": null
+      },
+      {
+        "visit": "v110",
+        "customer": "c45",
+        "store": "乙店",
+        "day": 21,
+        "choice": null
+      },
+      {
+        "visit": "v111",
+        "customer": "c46",
+        "store": "甲店",
+        "day": 22,
+        "choice": "i3"
+      },
+      {
+        "visit": "v112",
+        "customer": "c47",
+        "store": "乙店",
+        "day": 23,
+        "choice": "i5"
+      },
+      {
+        "visit": "v113",
+        "customer": "c48",
+        "store": "甲店",
+        "day": 24,
+        "choice": "i3"
+      },
+      {
+        "visit": "v114",
+        "customer": "c49",
+        "store": "乙店",
+        "day": 25,
+        "choice": "i3"
+      },
+      {
+        "visit": "v115",
+        "customer": "c50",
+        "store": "甲店",
+        "day": 26,
+        "choice": null
+      },
+      {
+        "visit": "v116",
+        "customer": "c51",
+        "store": "乙店",
+        "day": 27,
+        "choice": null
+      },
+      {
+        "visit": "v117",
+        "customer": "c52",
+        "store": "甲店",
+        "day": 28,
+        "choice": "i2"
+      },
+      {
+        "visit": "v118",
+        "customer": "c53",
+        "store": "乙店",
+        "day": 29,
+        "choice": null
+      },
+      {
+        "visit": "v119",
+        "customer": "c54",
+        "store": "甲店",
+        "day": 30,
+        "choice": null
+      },
+      {
+        "visit": "v120",
+        "customer": "c55",
+        "store": "乙店",
+        "day": 31,
+        "choice": "i5"
+      },
+      {
+        "visit": "v121",
+        "customer": "c56",
+        "store": "甲店",
+        "day": 32,
+        "choice": null
+      },
+      {
+        "visit": "v122",
+        "customer": "c57",
+        "store": "乙店",
+        "day": 33,
+        "choice": "i2"
+      },
+      {
+        "visit": "v123",
+        "customer": "c58",
+        "store": "甲店",
+        "day": 34,
+        "choice": null
+      },
+      {
+        "visit": "v124",
+        "customer": "c59",
+        "store": "乙店",
+        "day": 35,
+        "choice": null
+      },
+      {
+        "visit": "v125",
+        "customer": "c60",
+        "store": "甲店",
+        "day": 36,
+        "choice": "i2"
+      },
+      {
+        "visit": "v126",
+        "customer": "c61",
+        "store": "乙店",
+        "day": 37,
+        "choice": null
+      },
+      {
+        "visit": "v127",
+        "customer": "c62",
+        "store": "甲店",
+        "day": 38,
+        "choice": "i3"
+      },
+      {
+        "visit": "v128",
+        "customer": "c63",
+        "store": "乙店",
+        "day": 39,
+        "choice": null
+      },
+      {
+        "visit": "v129",
+        "customer": "c64",
+        "store": "甲店",
+        "day": 40,
+        "choice": "i2"
+      },
+      {
+        "visit": "v130",
+        "customer": "c0",
+        "store": "乙店",
+        "day": 41,
+        "choice": "i4"
+      },
+      {
+        "visit": "v131",
+        "customer": "c1",
+        "store": "甲店",
+        "day": 42,
+        "choice": "i3"
+      },
+      {
+        "visit": "v132",
+        "customer": "c2",
+        "store": "乙店",
+        "day": 43,
+        "choice": null
+      },
+      {
+        "visit": "v133",
+        "customer": "c3",
+        "store": "甲店",
+        "day": 44,
+        "choice": null
+      },
+      {
+        "visit": "v134",
+        "customer": "c4",
+        "store": "乙店",
+        "day": 45,
+        "choice": "i3"
+      },
+      {
+        "visit": "v135",
+        "customer": "c5",
+        "store": "甲店",
+        "day": 46,
+        "choice": "i2"
+      },
+      {
+        "visit": "v136",
+        "customer": "c6",
+        "store": "乙店",
+        "day": 47,
+        "choice": "i5"
+      },
+      {
+        "visit": "v137",
+        "customer": "c7",
+        "store": "甲店",
+        "day": 48,
+        "choice": "i4"
+      },
+      {
+        "visit": "v138",
+        "customer": "c8",
+        "store": "乙店",
+        "day": 49,
+        "choice": "i3"
+      },
+      {
+        "visit": "v139",
+        "customer": "c9",
+        "store": "甲店",
+        "day": 50,
+        "choice": "i2"
+      },
+      {
+        "visit": "v140",
+        "customer": "c10",
+        "store": "乙店",
+        "day": 51,
+        "choice": null
+      },
+      {
+        "visit": "v141",
+        "customer": "c11",
+        "store": "甲店",
+        "day": 52,
+        "choice": "i1"
+      },
+      {
+        "visit": "v142",
+        "customer": "c12",
+        "store": "乙店",
+        "day": 53,
+        "choice": null
+      },
+      {
+        "visit": "v143",
+        "customer": "c13",
+        "store": "甲店",
+        "day": 54,
+        "choice": null
+      },
+      {
+        "visit": "v144",
+        "customer": "c14",
+        "store": "乙店",
+        "day": 55,
+        "choice": "i5"
+      },
+      {
+        "visit": "v145",
+        "customer": "c15",
+        "store": "甲店",
+        "day": 56,
+        "choice": "i1"
+      },
+      {
+        "visit": "v146",
+        "customer": "c16",
+        "store": "乙店",
+        "day": 57,
+        "choice": null
+      },
+      {
+        "visit": "v147",
+        "customer": "c17",
+        "store": "甲店",
+        "day": 58,
+        "choice": "i4"
+      },
+      {
+        "visit": "v148",
+        "customer": "c18",
+        "store": "乙店",
+        "day": 59,
+        "choice": null
+      },
+      {
+        "visit": "v149",
+        "customer": "c19",
+        "store": "甲店",
+        "day": 60,
+        "choice": "i1"
+      },
+      {
+        "visit": "v150",
+        "customer": "c20",
+        "store": "乙店",
+        "day": 61,
+        "choice": "i2"
+      },
+      {
+        "visit": "v151",
+        "customer": "c21",
+        "store": "甲店",
+        "day": 62,
+        "choice": null
+      },
+      {
+        "visit": "v152",
+        "customer": "c22",
+        "store": "乙店",
+        "day": 63,
+        "choice": "i5"
+      },
+      {
+        "visit": "v153",
+        "customer": "c23",
+        "store": "甲店",
+        "day": 64,
+        "choice": null
+      },
+      {
+        "visit": "v154",
+        "customer": "c24",
+        "store": "乙店",
+        "day": 65,
+        "choice": "i2"
+      },
+      {
+        "visit": "v155",
+        "customer": "c25",
+        "store": "甲店",
+        "day": 66,
+        "choice": null
+      },
+      {
+        "visit": "v156",
+        "customer": "c26",
+        "store": "乙店",
+        "day": 67,
+        "choice": "i5"
+      },
+      {
+        "visit": "v157",
+        "customer": "c27",
+        "store": "甲店",
+        "day": 68,
+        "choice": "i2"
+      },
+      {
+        "visit": "v158",
+        "customer": "c28",
+        "store": "乙店",
+        "day": 69,
+        "choice": null
+      },
+      {
+        "visit": "v159",
+        "customer": "c29",
+        "store": "甲店",
+        "day": 70,
+        "choice": null
+      },
+      {
+        "visit": "v160",
+        "customer": "c30",
+        "store": "乙店",
+        "day": 71,
+        "choice": "i5"
+      },
+      {
+        "visit": "v161",
+        "customer": "c31",
+        "store": "甲店",
+        "day": 72,
+        "choice": "i1"
+      },
+      {
+        "visit": "v162",
+        "customer": "c32",
+        "store": "乙店",
+        "day": 73,
+        "choice": null
+      },
+      {
+        "visit": "v163",
+        "customer": "c33",
+        "store": "甲店",
+        "day": 74,
+        "choice": "i4"
+      },
+      {
+        "visit": "v164",
+        "customer": "c34",
+        "store": "乙店",
+        "day": 75,
+        "choice": null
+      },
+      {
+        "visit": "v165",
+        "customer": "c35",
+        "store": "甲店",
+        "day": 76,
+        "choice": null
+      },
+      {
+        "visit": "v166",
+        "customer": "c36",
+        "store": "乙店",
+        "day": 77,
+        "choice": "i2"
+      },
+      {
+        "visit": "v167",
+        "customer": "c37",
+        "store": "甲店",
+        "day": 78,
+        "choice": "i2"
+      },
+      {
+        "visit": "v168",
+        "customer": "c38",
+        "store": "乙店",
+        "day": 79,
+        "choice": "i5"
+      },
+      {
+        "visit": "v169",
+        "customer": "c39",
+        "store": "甲店",
+        "day": 80,
+        "choice": "i2"
+      },
+      {
+        "visit": "v170",
+        "customer": "c40",
+        "store": "乙店",
+        "day": 81,
+        "choice": "i1"
+      },
+      {
+        "visit": "v171",
+        "customer": "c41",
+        "store": "甲店",
+        "day": 82,
+        "choice": "i3"
+      },
+      {
+        "visit": "v172",
+        "customer": "c42",
+        "store": "乙店",
+        "day": 83,
+        "choice": null
+      },
+      {
+        "visit": "v173",
+        "customer": "c43",
+        "store": "甲店",
+        "day": 84,
+        "choice": null
+      },
+      {
+        "visit": "v174",
+        "customer": "c44",
+        "store": "乙店",
+        "day": 85,
+        "choice": "i2"
+      },
+      {
+        "visit": "v175",
+        "customer": "c45",
+        "store": "甲店",
+        "day": 86,
+        "choice": null
+      },
+      {
+        "visit": "v176",
+        "customer": "c46",
+        "store": "乙店",
+        "day": 87,
+        "choice": "i5"
+      },
+      {
+        "visit": "v177",
+        "customer": "c47",
+        "store": "甲店",
+        "day": 88,
+        "choice": "i3"
+      },
+      {
+        "visit": "v178",
+        "customer": "c48",
+        "store": "乙店",
+        "day": 89,
+        "choice": "i1"
+      },
+      {
+        "visit": "v179",
+        "customer": "c49",
+        "store": "甲店",
+        "day": 90,
+        "choice": "i2"
+      },
+      {
+        "visit": "v180",
+        "customer": "c50",
+        "store": "乙店",
+        "day": 1,
+        "choice": null
+      },
+      {
+        "visit": "v181",
+        "customer": "c51",
+        "store": "甲店",
+        "day": 2,
+        "choice": "i4"
+      },
+      {
+        "visit": "v182",
+        "customer": "c52",
+        "store": "乙店",
+        "day": 3,
+        "choice": null
+      },
+      {
+        "visit": "v183",
+        "customer": "c53",
+        "store": "甲店",
+        "day": 4,
+        "choice": "i4"
+      },
+      {
+        "visit": "v184",
+        "customer": "c54",
+        "store": "乙店",
+        "day": 5,
+        "choice": "i5"
+      },
+      {
+        "visit": "v185",
+        "customer": "c55",
+        "store": "甲店",
+        "day": 6,
+        "choice": null
+      },
+      {
+        "visit": "v186",
+        "customer": "c56",
+        "store": "乙店",
+        "day": 7,
+        "choice": null
+      },
+      {
+        "visit": "v187",
+        "customer": "c57",
+        "store": "甲店",
+        "day": 8,
+        "choice": "i2"
+      },
+      {
+        "visit": "v188",
+        "customer": "c58",
+        "store": "乙店",
+        "day": 9,
+        "choice": "i5"
+      },
+      {
+        "visit": "v189",
+        "customer": "c59",
+        "store": "甲店",
+        "day": 10,
+        "choice": "i4"
+      },
+      {
+        "visit": "v190",
+        "customer": "c60",
+        "store": "乙店",
+        "day": 11,
+        "choice": "i4"
+      },
+      {
+        "visit": "v191",
+        "customer": "c61",
+        "store": "甲店",
+        "day": 12,
+        "choice": "i2"
+      },
+      {
+        "visit": "v192",
+        "customer": "c62",
+        "store": "乙店",
+        "day": 13,
+        "choice": null
+      },
+      {
+        "visit": "v193",
+        "customer": "c63",
+        "store": "甲店",
+        "day": 14,
+        "choice": "i4"
+      },
+      {
+        "visit": "v194",
+        "customer": "c64",
+        "store": "乙店",
+        "day": 15,
+        "choice": null
+      },
+      {
+        "visit": "v195",
+        "customer": "c0",
+        "store": "甲店",
+        "day": 16,
+        "choice": "i3"
+      },
+      {
+        "visit": "v196",
+        "customer": "c1",
+        "store": "乙店",
+        "day": 17,
+        "choice": null
+      },
+      {
+        "visit": "v197",
+        "customer": "c2",
+        "store": "甲店",
+        "day": 18,
+        "choice": null
+      },
+      {
+        "visit": "v198",
+        "customer": "c3",
+        "store": "乙店",
+        "day": 19,
+        "choice": "i3"
+      },
+      {
+        "visit": "v199",
+        "customer": "c4",
+        "store": "甲店",
+        "day": 20,
+        "choice": "i2"
+      },
+      {
+        "visit": "v200",
+        "customer": "c5",
+        "store": "乙店",
+        "day": 21,
+        "choice": "i5"
+      },
+      {
+        "visit": "v201",
+        "customer": "c6",
+        "store": "甲店",
+        "day": 22,
+        "choice": null
+      },
+      {
+        "visit": "v202",
+        "customer": "c7",
+        "store": "乙店",
+        "day": 23,
+        "choice": null
+      },
+      {
+        "visit": "v203",
+        "customer": "c8",
+        "store": "甲店",
+        "day": 24,
+        "choice": null
+      },
+      {
+        "visit": "v204",
+        "customer": "c9",
+        "store": "乙店",
+        "day": 25,
+        "choice": "i5"
+      },
+      {
+        "visit": "v205",
+        "customer": "c10",
+        "store": "甲店",
+        "day": 26,
+        "choice": null
+      },
+      {
+        "visit": "v206",
+        "customer": "c11",
+        "store": "乙店",
+        "day": 27,
+        "choice": "i1"
+      },
+      {
+        "visit": "v207",
+        "customer": "c12",
+        "store": "甲店",
+        "day": 28,
+        "choice": "i2"
+      },
+      {
+        "visit": "v208",
+        "customer": "c13",
+        "store": "乙店",
+        "day": 29,
+        "choice": "i5"
+      },
+      {
+        "visit": "v209",
+        "customer": "c14",
+        "store": "甲店",
+        "day": 30,
+        "choice": "i2"
+      },
+      {
+        "visit": "v210",
+        "customer": "c15",
+        "store": "乙店",
+        "day": 31,
+        "choice": "i3"
+      },
+      {
+        "visit": "v211",
+        "customer": "c16",
+        "store": "甲店",
+        "day": 32,
+        "choice": null
+      },
+      {
+        "visit": "v212",
+        "customer": "c17",
+        "store": "乙店",
+        "day": 33,
+        "choice": null
+      },
+      {
+        "visit": "v213",
+        "customer": "c18",
+        "store": "甲店",
+        "day": 34,
+        "choice": "i1"
+      },
+      {
+        "visit": "v214",
+        "customer": "c19",
+        "store": "乙店",
+        "day": 35,
+        "choice": "i1"
+      },
+      {
+        "visit": "v215",
+        "customer": "c20",
+        "store": "甲店",
+        "day": 36,
+        "choice": "i4"
+      },
+      {
+        "visit": "v216",
+        "customer": "c21",
+        "store": "乙店",
+        "day": 37,
+        "choice": "i5"
+      },
+      {
+        "visit": "v217",
+        "customer": "c22",
+        "store": "甲店",
+        "day": 38,
+        "choice": "i2"
+      },
+      {
+        "visit": "v218",
+        "customer": "c23",
+        "store": "乙店",
+        "day": 39,
+        "choice": "i1"
+      },
+      {
+        "visit": "v219",
+        "customer": "c24",
+        "store": "甲店",
+        "day": 40,
+        "choice": "i4"
+      },
+      {
+        "visit": "v220",
+        "customer": "c25",
+        "store": "乙店",
+        "day": 41,
+        "choice": null
+      },
+      {
+        "visit": "v221",
+        "customer": "c26",
+        "store": "甲店",
+        "day": 42,
+        "choice": null
+      },
+      {
+        "visit": "v222",
+        "customer": "c27",
+        "store": "乙店",
+        "day": 43,
+        "choice": "i2"
+      },
+      {
+        "visit": "v223",
+        "customer": "c28",
+        "store": "甲店",
+        "day": 44,
+        "choice": null
+      },
+      {
+        "visit": "v224",
+        "customer": "c29",
+        "store": "乙店",
+        "day": 45,
+        "choice": null
+      },
+      {
+        "visit": "v225",
+        "customer": "c30",
+        "store": "甲店",
+        "day": 46,
+        "choice": null
+      },
+      {
+        "visit": "v226",
+        "customer": "c31",
+        "store": "乙店",
+        "day": 47,
+        "choice": "i4"
+      },
+      {
+        "visit": "v227",
+        "customer": "c32",
+        "store": "甲店",
+        "day": 48,
+        "choice": "i4"
+      },
+      {
+        "visit": "v228",
+        "customer": "c33",
+        "store": "乙店",
+        "day": 49,
+        "choice": null
+      },
+      {
+        "visit": "v229",
+        "customer": "c34",
+        "store": "甲店",
+        "day": 50,
+        "choice": "i2"
+      },
+      {
+        "visit": "v230",
+        "customer": "c35",
+        "store": "乙店",
+        "day": 51,
+        "choice": "i3"
+      },
+      {
+        "visit": "v231",
+        "customer": "c36",
+        "store": "甲店",
+        "day": 52,
+        "choice": null
+      },
+      {
+        "visit": "v232",
+        "customer": "c37",
+        "store": "乙店",
+        "day": 53,
+        "choice": "i5"
+      },
+      {
+        "visit": "v233",
+        "customer": "c38",
+        "store": "甲店",
+        "day": 54,
+        "choice": "i2"
+      },
+      {
+        "visit": "v234",
+        "customer": "c39",
+        "store": "乙店",
+        "day": 55,
+        "choice": "i2"
+      },
+      {
+        "visit": "v235",
+        "customer": "c40",
+        "store": "甲店",
+        "day": 56,
+        "choice": "i2"
+      },
+      {
+        "visit": "v236",
+        "customer": "c41",
+        "store": "乙店",
+        "day": 57,
+        "choice": "i5"
+      },
+      {
+        "visit": "v237",
+        "customer": "c42",
+        "store": "甲店",
+        "day": 58,
+        "choice": "i4"
+      },
+      {
+        "visit": "v238",
+        "customer": "c43",
+        "store": "乙店",
+        "day": 59,
+        "choice": "i3"
+      },
+      {
+        "visit": "v239",
+        "customer": "c44",
+        "store": "甲店",
+        "day": 60,
+        "choice": "i3"
+      }
+    ],
+    "offers": [
+      {
+        "visit": "v000",
+        "item": "i5",
+        "price": 25,
+        "available": false,
+        "shown_at": 1
+      },
+      {
+        "visit": "v001",
+        "item": "i1",
+        "price": 14,
+        "available": true,
+        "shown_at": 2
+      },
+      {
+        "visit": "v001",
+        "item": "i2",
+        "price": 17,
+        "available": true,
+        "shown_at": 2
+      },
+      {
+        "visit": "v001",
+        "item": "i3",
+        "price": 20,
+        "available": true,
+        "shown_at": 2
+      },
+      {
+        "visit": "v001",
+        "item": "i4",
+        "price": 23,
+        "available": true,
+        "shown_at": 2
+      },
+      {
+        "visit": "v002",
+        "item": "i1",
+        "price": 15,
+        "available": true,
+        "shown_at": 3
+      },
+      {
+        "visit": "v002",
+        "item": "i2",
+        "price": 18,
+        "available": true,
+        "shown_at": 3
+      },
+      {
+        "visit": "v002",
+        "item": "i3",
+        "price": 21,
+        "available": true,
+        "shown_at": 3
+      },
+      {
+        "visit": "v002",
+        "item": "i4",
+        "price": 24,
+        "available": true,
+        "shown_at": 3
+      },
+      {
+        "visit": "v003",
+        "item": "i1",
+        "price": 13,
+        "available": true,
+        "shown_at": 4
+      },
+      {
+        "visit": "v003",
+        "item": "i2",
+        "price": 16,
+        "available": true,
+        "shown_at": 4
+      },
+      {
+        "visit": "v003",
+        "item": "i3",
+        "price": 19,
+        "available": true,
+        "shown_at": 4
+      },
+      {
+        "visit": "v003",
+        "item": "i4",
+        "price": 22,
+        "available": true,
+        "shown_at": 4
+      },
+      {
+        "visit": "v004",
+        "item": "i5",
+        "price": 26,
+        "available": false,
+        "shown_at": 5
+      },
+      {
+        "visit": "v005",
+        "item": "i1",
+        "price": 15,
+        "available": true,
+        "shown_at": 6
+      },
+      {
+        "visit": "v005",
+        "item": "i2",
+        "price": 18,
+        "available": true,
+        "shown_at": 6
+      },
+      {
+        "visit": "v005",
+        "item": "i3",
+        "price": 21,
+        "available": true,
+        "shown_at": 6
+      },
+      {
+        "visit": "v005",
+        "item": "i4",
+        "price": 24,
+        "available": true,
+        "shown_at": 6
+      },
+      {
+        "visit": "v006",
+        "item": "i1",
+        "price": 13,
+        "available": true,
+        "shown_at": 7
+      },
+      {
+        "visit": "v006",
+        "item": "i2",
+        "price": 16,
+        "available": true,
+        "shown_at": 7
+      },
+      {
+        "visit": "v006",
+        "item": "i3",
+        "price": 19,
+        "available": true,
+        "shown_at": 7
+      },
+      {
+        "visit": "v006",
+        "item": "i4",
+        "price": 22,
+        "available": true,
+        "shown_at": 7
+      },
+      {
+        "visit": "v007",
+        "item": "i1",
+        "price": 14,
+        "available": true,
+        "shown_at": 8
+      },
+      {
+        "visit": "v007",
+        "item": "i2",
+        "price": 17,
+        "available": true,
+        "shown_at": 8
+      },
+      {
+        "visit": "v007",
+        "item": "i3",
+        "price": 20,
+        "available": true,
+        "shown_at": 8
+      },
+      {
+        "visit": "v007",
+        "item": "i4",
+        "price": 23,
+        "available": true,
+        "shown_at": 8
+      },
+      {
+        "visit": "v008",
+        "item": "i5",
+        "price": 27,
+        "available": true,
+        "shown_at": 9
+      },
+      {
+        "visit": "v009",
+        "item": "i1",
+        "price": 13,
+        "available": true,
+        "shown_at": 10
+      },
+      {
+        "visit": "v009",
+        "item": "i2",
+        "price": 16,
+        "available": true,
+        "shown_at": 10
+      },
+      {
+        "visit": "v009",
+        "item": "i3",
+        "price": 19,
+        "available": true,
+        "shown_at": 10
+      },
+      {
+        "visit": "v009",
+        "item": "i4",
+        "price": 22,
+        "available": true,
+        "shown_at": 10
+      },
+      {
+        "visit": "v010",
+        "item": "i1",
+        "price": 14,
+        "available": true,
+        "shown_at": 11
+      },
+      {
+        "visit": "v010",
+        "item": "i2",
+        "price": 17,
+        "available": true,
+        "shown_at": 11
+      },
+      {
+        "visit": "v010",
+        "item": "i3",
+        "price": 20,
+        "available": true,
+        "shown_at": 11
+      },
+      {
+        "visit": "v010",
+        "item": "i4",
+        "price": 23,
+        "available": true,
+        "shown_at": 11
+      },
+      {
+        "visit": "v011",
+        "item": "i1",
+        "price": 15,
+        "available": true,
+        "shown_at": 12
+      },
+      {
+        "visit": "v011",
+        "item": "i2",
+        "price": 18,
+        "available": false,
+        "shown_at": 12
+      },
+      {
+        "visit": "v011",
+        "item": "i3",
+        "price": 21,
+        "available": true,
+        "shown_at": 12
+      },
+      {
+        "visit": "v011",
+        "item": "i4",
+        "price": 24,
+        "available": true,
+        "shown_at": 12
+      },
+      {
+        "visit": "v012",
+        "item": "i5",
+        "price": 25,
+        "available": true,
+        "shown_at": 13
+      },
+      {
+        "visit": "v013",
+        "item": "i1",
+        "price": 14,
+        "available": true,
+        "shown_at": 14
+      },
+      {
+        "visit": "v013",
+        "item": "i2",
+        "price": 17,
+        "available": false,
+        "shown_at": 14
+      },
+      {
+        "visit": "v013",
+        "item": "i3",
+        "price": 20,
+        "available": true,
+        "shown_at": 14
+      },
+      {
+        "visit": "v013",
+        "item": "i4",
+        "price": 23,
+        "available": true,
+        "shown_at": 14
+      },
+      {
+        "visit": "v014",
+        "item": "i1",
+        "price": 15,
+        "available": true,
+        "shown_at": 15
+      },
+      {
+        "visit": "v014",
+        "item": "i2",
+        "price": 18,
+        "available": true,
+        "shown_at": 15
+      },
+      {
+        "visit": "v014",
+        "item": "i3",
+        "price": 21,
+        "available": true,
+        "shown_at": 15
+      },
+      {
+        "visit": "v014",
+        "item": "i4",
+        "price": 24,
+        "available": true,
+        "shown_at": 15
+      },
+      {
+        "visit": "v015",
+        "item": "i1",
+        "price": 13,
+        "available": true,
+        "shown_at": 16
+      },
+      {
+        "visit": "v015",
+        "item": "i2",
+        "price": 16,
+        "available": true,
+        "shown_at": 16
+      },
+      {
+        "visit": "v015",
+        "item": "i3",
+        "price": 19,
+        "available": true,
+        "shown_at": 16
+      },
+      {
+        "visit": "v015",
+        "item": "i4",
+        "price": 22,
+        "available": true,
+        "shown_at": 16
+      },
+      {
+        "visit": "v016",
+        "item": "i5",
+        "price": 26,
+        "available": true,
+        "shown_at": 17
+      },
+      {
+        "visit": "v017",
+        "item": "i1",
+        "price": 15,
+        "available": true,
+        "shown_at": 18
+      },
+      {
+        "visit": "v017",
+        "item": "i2",
+        "price": 18,
+        "available": true,
+        "shown_at": 18
+      },
+      {
+        "visit": "v017",
+        "item": "i3",
+        "price": 21,
+        "available": true,
+        "shown_at": 18
+      },
+      {
+        "visit": "v017",
+        "item": "i4",
+        "price": 24,
+        "available": true,
+        "shown_at": 18
+      },
+      {
+        "visit": "v018",
+        "item": "i1",
+        "price": 13,
+        "available": false,
+        "shown_at": 19
+      },
+      {
+        "visit": "v018",
+        "item": "i2",
+        "price": 16,
+        "available": true,
+        "shown_at": 19
+      },
+      {
+        "visit": "v018",
+        "item": "i3",
+        "price": 19,
+        "available": true,
+        "shown_at": 19
+      },
+      {
+        "visit": "v018",
+        "item": "i4",
+        "price": 22,
+        "available": true,
+        "shown_at": 19
+      },
+      {
+        "visit": "v019",
+        "item": "i1",
+        "price": 14,
+        "available": true,
+        "shown_at": 20
+      },
+      {
+        "visit": "v019",
+        "item": "i2",
+        "price": 17,
+        "available": true,
+        "shown_at": 20
+      },
+      {
+        "visit": "v019",
+        "item": "i3",
+        "price": 20,
+        "available": false,
+        "shown_at": 20
+      },
+      {
+        "visit": "v019",
+        "item": "i4",
+        "price": 23,
+        "available": true,
+        "shown_at": 20
+      },
+      {
+        "visit": "v020",
+        "item": "i5",
+        "price": 27,
+        "available": true,
+        "shown_at": 21
+      },
+      {
+        "visit": "v021",
+        "item": "i1",
+        "price": 13,
+        "available": true,
+        "shown_at": 22
+      },
+      {
+        "visit": "v021",
+        "item": "i2",
+        "price": 16,
+        "available": true,
+        "shown_at": 22
+      },
+      {
+        "visit": "v021",
+        "item": "i3",
+        "price": 19,
+        "available": true,
+        "shown_at": 22
+      },
+      {
+        "visit": "v021",
+        "item": "i4",
+        "price": 22,
+        "available": true,
+        "shown_at": 22
+      },
+      {
+        "visit": "v022",
+        "item": "i1",
+        "price": 14,
+        "available": false,
+        "shown_at": 23
+      },
+      {
+        "visit": "v022",
+        "item": "i2",
+        "price": 17,
+        "available": true,
+        "shown_at": 23
+      },
+      {
+        "visit": "v022",
+        "item": "i3",
+        "price": 20,
+        "available": true,
+        "shown_at": 23
+      },
+      {
+        "visit": "v022",
+        "item": "i4",
+        "price": 23,
+        "available": true,
+        "shown_at": 23
+      },
+      {
+        "visit": "v023",
+        "item": "i1",
+        "price": 15,
+        "available": true,
+        "shown_at": 24
+      },
+      {
+        "visit": "v023",
+        "item": "i2",
+        "price": 18,
+        "available": true,
+        "shown_at": 24
+      },
+      {
+        "visit": "v023",
+        "item": "i3",
+        "price": 21,
+        "available": true,
+        "shown_at": 24
+      },
+      {
+        "visit": "v023",
+        "item": "i4",
+        "price": 24,
+        "available": true,
+        "shown_at": 24
+      },
+      {
+        "visit": "v024",
+        "item": "i5",
+        "price": 25,
+        "available": false,
+        "shown_at": 25
+      },
+      {
+        "visit": "v025",
+        "item": "i1",
+        "price": 14,
+        "available": true,
+        "shown_at": 26
+      },
+      {
+        "visit": "v025",
+        "item": "i2",
+        "price": 17,
+        "available": true,
+        "shown_at": 26
+      },
+      {
+        "visit": "v025",
+        "item": "i3",
+        "price": 20,
+        "available": true,
+        "shown_at": 26
+      },
+      {
+        "visit": "v025",
+        "item": "i4",
+        "price": 23,
+        "available": true,
+        "shown_at": 26
+      },
+      {
+        "visit": "v026",
+        "item": "i1",
+        "price": 15,
+        "available": true,
+        "shown_at": 27
+      },
+      {
+        "visit": "v026",
+        "item": "i2",
+        "price": 18,
+        "available": true,
+        "shown_at": 27
+      },
+      {
+        "visit": "v026",
+        "item": "i3",
+        "price": 21,
+        "available": true,
+        "shown_at": 27
+      },
+      {
+        "visit": "v026",
+        "item": "i4",
+        "price": 24,
+        "available": true,
+        "shown_at": 27
+      },
+      {
+        "visit": "v027",
+        "item": "i1",
+        "price": 13,
+        "available": true,
+        "shown_at": 28
+      },
+      {
+        "visit": "v027",
+        "item": "i2",
+        "price": 16,
+        "available": false,
+        "shown_at": 28
+      },
+      {
+        "visit": "v027",
+        "item": "i3",
+        "price": 19,
+        "available": true,
+        "shown_at": 28
+      },
+      {
+        "visit": "v027",
+        "item": "i4",
+        "price": 22,
+        "available": false,
+        "shown_at": 28
+      },
+      {
+        "visit": "v028",
+        "item": "i5",
+        "price": 26,
+        "available": true,
+        "shown_at": 29
+      },
+      {
+        "visit": "v029",
+        "item": "i1",
+        "price": 15,
+        "available": true,
+        "shown_at": 30
+      },
+      {
+        "visit": "v029",
+        "item": "i2",
+        "price": 18,
+        "available": true,
+        "shown_at": 30
+      },
+      {
+        "visit": "v029",
+        "item": "i3",
+        "price": 21,
+        "available": true,
+        "shown_at": 30
+      },
+      {
+        "visit": "v029",
+        "item": "i4",
+        "price": 24,
+        "available": true,
+        "shown_at": 30
+      },
+      {
+        "visit": "v030",
+        "item": "i1",
+        "price": 13,
+        "available": true,
+        "shown_at": 31
+      },
+      {
+        "visit": "v030",
+        "item": "i2",
+        "price": 16,
+        "available": true,
+        "shown_at": 31
+      },
+      {
+        "visit": "v030",
+        "item": "i3",
+        "price": 19,
+        "available": true,
+        "shown_at": 31
+      },
+      {
+        "visit": "v030",
+        "item": "i4",
+        "price": 22,
+        "available": true,
+        "shown_at": 31
+      },
+      {
+        "visit": "v031",
+        "item": "i1",
+        "price": 14,
+        "available": true,
+        "shown_at": 32
+      },
+      {
+        "visit": "v031",
+        "item": "i2",
+        "price": 17,
+        "available": true,
+        "shown_at": 32
+      },
+      {
+        "visit": "v031",
+        "item": "i3",
+        "price": 20,
+        "available": true,
+        "shown_at": 32
+      },
+      {
+        "visit": "v031",
+        "item": "i4",
+        "price": 23,
+        "available": false,
+        "shown_at": 32
+      },
+      {
+        "visit": "v032",
+        "item": "i5",
+        "price": 27,
+        "available": true,
+        "shown_at": 33
+      },
+      {
+        "visit": "v033",
+        "item": "i1",
+        "price": 13,
+        "available": false,
+        "shown_at": 34
+      },
+      {
+        "visit": "v033",
+        "item": "i2",
+        "price": 16,
+        "available": true,
+        "shown_at": 34
+      },
+      {
+        "visit": "v033",
+        "item": "i3",
+        "price": 19,
+        "available": true,
+        "shown_at": 34
+      },
+      {
+        "visit": "v033",
+        "item": "i4",
+        "price": 22,
+        "available": true,
+        "shown_at": 34
+      },
+      {
+        "visit": "v034",
+        "item": "i1",
+        "price": 14,
+        "available": true,
+        "shown_at": 35
+      },
+      {
+        "visit": "v034",
+        "item": "i2",
+        "price": 17,
+        "available": true,
+        "shown_at": 35
+      },
+      {
+        "visit": "v034",
+        "item": "i3",
+        "price": 20,
+        "available": true,
+        "shown_at": 35
+      },
+      {
+        "visit": "v034",
+        "item": "i4",
+        "price": 23,
+        "available": false,
+        "shown_at": 35
+      },
+      {
+        "visit": "v035",
+        "item": "i1",
+        "price": 15,
+        "available": true,
+        "shown_at": 36
+      },
+      {
+        "visit": "v035",
+        "item": "i2",
+        "price": 18,
+        "available": true,
+        "shown_at": 36
+      },
+      {
+        "visit": "v035",
+        "item": "i3",
+        "price": 21,
+        "available": true,
+        "shown_at": 36
+      },
+      {
+        "visit": "v035",
+        "item": "i4",
+        "price": 24,
+        "available": true,
+        "shown_at": 36
+      },
+      {
+        "visit": "v036",
+        "item": "i5",
+        "price": 25,
+        "available": true,
+        "shown_at": 37
+      },
+      {
+        "visit": "v037",
+        "item": "i1",
+        "price": 14,
+        "available": true,
+        "shown_at": 38
+      },
+      {
+        "visit": "v037",
+        "item": "i2",
+        "price": 17,
+        "available": true,
+        "shown_at": 38
+      },
+      {
+        "visit": "v037",
+        "item": "i3",
+        "price": 20,
+        "available": true,
+        "shown_at": 38
+      },
+      {
+        "visit": "v037",
+        "item": "i4",
+        "price": 23,
+        "available": true,
+        "shown_at": 38
+      },
+      {
+        "visit": "v038",
+        "item": "i1",
+        "price": 15,
+        "available": true,
+        "shown_at": 39
+      },
+      {
+        "visit": "v038",
+        "item": "i2",
+        "price": 18,
+        "available": true,
+        "shown_at": 39
+      },
+      {
+        "visit": "v038",
+        "item": "i3",
+        "price": 21,
+        "available": true,
+        "shown_at": 39
+      },
+      {
+        "visit": "v038",
+        "item": "i4",
+        "price": 24,
+        "available": true,
+        "shown_at": 39
+      },
+      {
+        "visit": "v039",
+        "item": "i1",
+        "price": 13,
+        "available": true,
+        "shown_at": 40
+      },
+      {
+        "visit": "v039",
+        "item": "i2",
+        "price": 16,
+        "available": true,
+        "shown_at": 40
+      },
+      {
+        "visit": "v039",
+        "item": "i3",
+        "price": 19,
+        "available": true,
+        "shown_at": 40
+      },
+      {
+        "visit": "v039",
+        "item": "i4",
+        "price": 22,
+        "available": true,
+        "shown_at": 40
+      },
+      {
+        "visit": "v040",
+        "item": "i5",
+        "price": 26,
+        "available": true,
+        "shown_at": 41
+      },
+      {
+        "visit": "v041",
+        "item": "i1",
+        "price": 15,
+        "available": false,
+        "shown_at": 42
+      },
+      {
+        "visit": "v041",
+        "item": "i2",
+        "price": 18,
+        "available": true,
+        "shown_at": 42
+      },
+      {
+        "visit": "v041",
+        "item": "i3",
+        "price": 21,
+        "available": true,
+        "shown_at": 42
+      },
+      {
+        "visit": "v041",
+        "item": "i4",
+        "price": 24,
+        "available": false,
+        "shown_at": 42
+      },
+      {
+        "visit": "v042",
+        "item": "i1",
+        "price": 13,
+        "available": false,
+        "shown_at": 43
+      },
+      {
+        "visit": "v042",
+        "item": "i2",
+        "price": 16,
+        "available": true,
+        "shown_at": 43
+      },
+      {
+        "visit": "v042",
+        "item": "i3",
+        "price": 19,
+        "available": true,
+        "shown_at": 43
+      },
+      {
+        "visit": "v042",
+        "item": "i4",
+        "price": 22,
+        "available": true,
+        "shown_at": 43
+      },
+      {
+        "visit": "v043",
+        "item": "i1",
+        "price": 14,
+        "available": true,
+        "shown_at": 44
+      },
+      {
+        "visit": "v043",
+        "item": "i2",
+        "price": 17,
+        "available": false,
+        "shown_at": 44
+      },
+      {
+        "visit": "v043",
+        "item": "i3",
+        "price": 20,
+        "available": true,
+        "shown_at": 44
+      },
+      {
+        "visit": "v043",
+        "item": "i4",
+        "price": 23,
+        "available": true,
+        "shown_at": 44
+      },
+      {
+        "visit": "v044",
+        "item": "i5",
+        "price": 27,
+        "available": true,
+        "shown_at": 45
+      },
+      {
+        "visit": "v045",
+        "item": "i1",
+        "price": 13,
+        "available": true,
+        "shown_at": 46
+      },
+      {
+        "visit": "v045",
+        "item": "i2",
+        "price": 16,
+        "available": true,
+        "shown_at": 46
+      },
+      {
+        "visit": "v045",
+        "item": "i3",
+        "price": 19,
+        "available": true,
+        "shown_at": 46
+      },
+      {
+        "visit": "v045",
+        "item": "i4",
+        "price": 22,
+        "available": true,
+        "shown_at": 46
+      },
+      {
+        "visit": "v046",
+        "item": "i1",
+        "price": 14,
+        "available": true,
+        "shown_at": 47
+      },
+      {
+        "visit": "v046",
+        "item": "i2",
+        "price": 17,
+        "available": true,
+        "shown_at": 47
+      },
+      {
+        "visit": "v046",
+        "item": "i3",
+        "price": 20,
+        "available": true,
+        "shown_at": 47
+      },
+      {
+        "visit": "v046",
+        "item": "i4",
+        "price": 23,
+        "available": true,
+        "shown_at": 47
+      },
+      {
+        "visit": "v047",
+        "item": "i1",
+        "price": 15,
+        "available": true,
+        "shown_at": 48
+      },
+      {
+        "visit": "v047",
+        "item": "i2",
+        "price": 18,
+        "available": true,
+        "shown_at": 48
+      },
+      {
+        "visit": "v047",
+        "item": "i3",
+        "price": 21,
+        "available": true,
+        "shown_at": 48
+      },
+      {
+        "visit": "v047",
+        "item": "i4",
+        "price": 24,
+        "available": true,
+        "shown_at": 48
+      },
+      {
+        "visit": "v048",
+        "item": "i5",
+        "price": 25,
+        "available": true,
+        "shown_at": 49
+      },
+      {
+        "visit": "v049",
+        "item": "i1",
+        "price": 14,
+        "available": true,
+        "shown_at": 50
+      },
+      {
+        "visit": "v049",
+        "item": "i2",
+        "price": 17,
+        "available": true,
+        "shown_at": 50
+      },
+      {
+        "visit": "v049",
+        "item": "i3",
+        "price": 20,
+        "available": true,
+        "shown_at": 50
+      },
+      {
+        "visit": "v049",
+        "item": "i4",
+        "price": 23,
+        "available": true,
+        "shown_at": 50
+      },
+      {
+        "visit": "v050",
+        "item": "i1",
+        "price": 15,
+        "available": true,
+        "shown_at": 51
+      },
+      {
+        "visit": "v050",
+        "item": "i2",
+        "price": 18,
+        "available": true,
+        "shown_at": 51
+      },
+      {
+        "visit": "v050",
+        "item": "i3",
+        "price": 21,
+        "available": false,
+        "shown_at": 51
+      },
+      {
+        "visit": "v050",
+        "item": "i4",
+        "price": 24,
+        "available": true,
+        "shown_at": 51
+      },
+      {
+        "visit": "v050",
+        "item": "i6",
+        "price": 30,
+        "available": true,
+        "shown_at": 51
+      },
+      {
+        "visit": "v051",
+        "item": "i1",
+        "price": 13,
+        "available": true,
+        "shown_at": 52
+      },
+      {
+        "visit": "v051",
+        "item": "i2",
+        "price": 16,
+        "available": true,
+        "shown_at": 52
+      },
+      {
+        "visit": "v051",
+        "item": "i3",
+        "price": 19,
+        "available": true,
+        "shown_at": 52
+      },
+      {
+        "visit": "v051",
+        "item": "i4",
+        "price": 22,
+        "available": true,
+        "shown_at": 52
+      },
+      {
+        "visit": "v052",
+        "item": "i5",
+        "price": 26,
+        "available": true,
+        "shown_at": 53
+      },
+      {
+        "visit": "v053",
+        "item": "i1",
+        "price": 15,
+        "available": true,
+        "shown_at": 54
+      },
+      {
+        "visit": "v053",
+        "item": "i2",
+        "price": 18,
+        "available": true,
+        "shown_at": 54
+      },
+      {
+        "visit": "v053",
+        "item": "i3",
+        "price": 21,
+        "available": true,
+        "shown_at": 54
+      },
+      {
+        "visit": "v053",
+        "item": "i4",
+        "price": 24,
+        "available": true,
+        "shown_at": 54
+      },
+      {
+        "visit": "v054",
+        "item": "i1",
+        "price": 13,
+        "available": true,
+        "shown_at": 55
+      },
+      {
+        "visit": "v054",
+        "item": "i2",
+        "price": 16,
+        "available": false,
+        "shown_at": 55
+      },
+      {
+        "visit": "v054",
+        "item": "i3",
+        "price": 19,
+        "available": true,
+        "shown_at": 55
+      },
+      {
+        "visit": "v054",
+        "item": "i4",
+        "price": 22,
+        "available": true,
+        "shown_at": 55
+      },
+      {
+        "visit": "v055",
+        "item": "i1",
+        "price": 14,
+        "available": true,
+        "shown_at": 56
+      },
+      {
+        "visit": "v055",
+        "item": "i2",
+        "price": 17,
+        "available": false,
+        "shown_at": 56
+      },
+      {
+        "visit": "v055",
+        "item": "i3",
+        "price": 20,
+        "available": false,
+        "shown_at": 56
+      },
+      {
+        "visit": "v055",
+        "item": "i4",
+        "price": 23,
+        "available": true,
+        "shown_at": 56
+      },
+      {
+        "visit": "v055",
+        "item": "i6",
+        "price": 29,
+        "available": true,
+        "shown_at": 56
+      },
+      {
+        "visit": "v056",
+        "item": "i5",
+        "price": 27,
+        "available": true,
+        "shown_at": 57
+      },
+      {
+        "visit": "v057",
+        "item": "i1",
+        "price": 13,
+        "available": true,
+        "shown_at": 58
+      },
+      {
+        "visit": "v057",
+        "item": "i2",
+        "price": 16,
+        "available": true,
+        "shown_at": 58
+      },
+      {
+        "visit": "v057",
+        "item": "i3",
+        "price": 19,
+        "available": true,
+        "shown_at": 58
+      },
+      {
+        "visit": "v057",
+        "item": "i4",
+        "price": 22,
+        "available": true,
+        "shown_at": 58
+      },
+      {
+        "visit": "v058",
+        "item": "i1",
+        "price": 14,
+        "available": true,
+        "shown_at": 59
+      },
+      {
+        "visit": "v058",
+        "item": "i2",
+        "price": 17,
+        "available": true,
+        "shown_at": 59
+      },
+      {
+        "visit": "v058",
+        "item": "i3",
+        "price": 20,
+        "available": true,
+        "shown_at": 59
+      },
+      {
+        "visit": "v058",
+        "item": "i4",
+        "price": 23,
+        "available": true,
+        "shown_at": 59
+      },
+      {
+        "visit": "v059",
+        "item": "i1",
+        "price": 15,
+        "available": true,
+        "shown_at": 60
+      },
+      {
+        "visit": "v059",
+        "item": "i2",
+        "price": 18,
+        "available": true,
+        "shown_at": 60
+      },
+      {
+        "visit": "v059",
+        "item": "i3",
+        "price": 21,
+        "available": true,
+        "shown_at": 60
+      },
+      {
+        "visit": "v059",
+        "item": "i4",
+        "price": 24,
+        "available": true,
+        "shown_at": 60
+      },
+      {
+        "visit": "v060",
+        "item": "i5",
+        "price": 25,
+        "available": true,
+        "shown_at": 61
+      },
+      {
+        "visit": "v060",
+        "item": "i6",
+        "price": 28,
+        "available": false,
+        "shown_at": 61
+      },
+      {
+        "visit": "v061",
+        "item": "i1",
+        "price": 14,
+        "available": true,
+        "shown_at": 62
+      },
+      {
+        "visit": "v061",
+        "item": "i2",
+        "price": 17,
+        "available": true,
+        "shown_at": 62
+      },
+      {
+        "visit": "v061",
+        "item": "i3",
+        "price": 20,
+        "available": true,
+        "shown_at": 62
+      },
+      {
+        "visit": "v061",
+        "item": "i4",
+        "price": 23,
+        "available": true,
+        "shown_at": 62
+      },
+      {
+        "visit": "v062",
+        "item": "i1",
+        "price": 15,
+        "available": true,
+        "shown_at": 63
+      },
+      {
+        "visit": "v062",
+        "item": "i2",
+        "price": 18,
+        "available": true,
+        "shown_at": 63
+      },
+      {
+        "visit": "v062",
+        "item": "i3",
+        "price": 21,
+        "available": true,
+        "shown_at": 63
+      },
+      {
+        "visit": "v062",
+        "item": "i4",
+        "price": 24,
+        "available": true,
+        "shown_at": 63
+      },
+      {
+        "visit": "v063",
+        "item": "i1",
+        "price": 13,
+        "available": true,
+        "shown_at": 64
+      },
+      {
+        "visit": "v063",
+        "item": "i2",
+        "price": 16,
+        "available": false,
+        "shown_at": 64
+      },
+      {
+        "visit": "v063",
+        "item": "i3",
+        "price": 19,
+        "available": true,
+        "shown_at": 64
+      },
+      {
+        "visit": "v063",
+        "item": "i4",
+        "price": 22,
+        "available": true,
+        "shown_at": 64
+      },
+      {
+        "visit": "v064",
+        "item": "i5",
+        "price": 26,
+        "available": true,
+        "shown_at": 65
+      },
+      {
+        "visit": "v065",
+        "item": "i1",
+        "price": 15,
+        "available": true,
+        "shown_at": 66
+      },
+      {
+        "visit": "v065",
+        "item": "i2",
+        "price": 18,
+        "available": true,
+        "shown_at": 66
+      },
+      {
+        "visit": "v065",
+        "item": "i3",
+        "price": 21,
+        "available": true,
+        "shown_at": 66
+      },
+      {
+        "visit": "v065",
+        "item": "i4",
+        "price": 24,
+        "available": true,
+        "shown_at": 66
+      },
+      {
+        "visit": "v065",
+        "item": "i6",
+        "price": 30,
+        "available": true,
+        "shown_at": 66
+      },
+      {
+        "visit": "v066",
+        "item": "i1",
+        "price": 13,
+        "available": false,
+        "shown_at": 67
+      },
+      {
+        "visit": "v066",
+        "item": "i2",
+        "price": 16,
+        "available": true,
+        "shown_at": 67
+      },
+      {
+        "visit": "v066",
+        "item": "i3",
+        "price": 19,
+        "available": true,
+        "shown_at": 67
+      },
+      {
+        "visit": "v066",
+        "item": "i4",
+        "price": 22,
+        "available": true,
+        "shown_at": 67
+      },
+      {
+        "visit": "v067",
+        "item": "i1",
+        "price": 14,
+        "available": true,
+        "shown_at": 68
+      },
+      {
+        "visit": "v067",
+        "item": "i2",
+        "price": 17,
+        "available": true,
+        "shown_at": 68
+      },
+      {
+        "visit": "v067",
+        "item": "i3",
+        "price": 20,
+        "available": true,
+        "shown_at": 68
+      },
+      {
+        "visit": "v067",
+        "item": "i4",
+        "price": 23,
+        "available": true,
+        "shown_at": 68
+      },
+      {
+        "visit": "v068",
+        "item": "i5",
+        "price": 27,
+        "available": true,
+        "shown_at": 69
+      },
+      {
+        "visit": "v069",
+        "item": "i1",
+        "price": 13,
+        "available": true,
+        "shown_at": 70
+      },
+      {
+        "visit": "v069",
+        "item": "i2",
+        "price": 16,
+        "available": true,
+        "shown_at": 70
+      },
+      {
+        "visit": "v069",
+        "item": "i3",
+        "price": 19,
+        "available": true,
+        "shown_at": 70
+      },
+      {
+        "visit": "v069",
+        "item": "i4",
+        "price": 22,
+        "available": true,
+        "shown_at": 70
+      },
+      {
+        "visit": "v070",
+        "item": "i1",
+        "price": 14,
+        "available": true,
+        "shown_at": 71
+      },
+      {
+        "visit": "v070",
+        "item": "i2",
+        "price": 17,
+        "available": false,
+        "shown_at": 71
+      },
+      {
+        "visit": "v070",
+        "item": "i3",
+        "price": 20,
+        "available": false,
+        "shown_at": 71
+      },
+      {
+        "visit": "v070",
+        "item": "i4",
+        "price": 23,
+        "available": true,
+        "shown_at": 71
+      },
+      {
+        "visit": "v070",
+        "item": "i6",
+        "price": 29,
+        "available": true,
+        "shown_at": 71
+      },
+      {
+        "visit": "v071",
+        "item": "i1",
+        "price": 15,
+        "available": true,
+        "shown_at": 72
+      },
+      {
+        "visit": "v071",
+        "item": "i2",
+        "price": 18,
+        "available": false,
+        "shown_at": 72
+      },
+      {
+        "visit": "v071",
+        "item": "i3",
+        "price": 21,
+        "available": true,
+        "shown_at": 72
+      },
+      {
+        "visit": "v071",
+        "item": "i4",
+        "price": 24,
+        "available": true,
+        "shown_at": 72
+      },
+      {
+        "visit": "v072",
+        "item": "i5",
+        "price": 25,
+        "available": true,
+        "shown_at": 73
+      },
+      {
+        "visit": "v073",
+        "item": "i1",
+        "price": 14,
+        "available": false,
+        "shown_at": 74
+      },
+      {
+        "visit": "v073",
+        "item": "i2",
+        "price": 17,
+        "available": true,
+        "shown_at": 74
+      },
+      {
+        "visit": "v073",
+        "item": "i3",
+        "price": 20,
+        "available": true,
+        "shown_at": 74
+      },
+      {
+        "visit": "v073",
+        "item": "i4",
+        "price": 23,
+        "available": true,
+        "shown_at": 74
+      },
+      {
+        "visit": "v074",
+        "item": "i1",
+        "price": 15,
+        "available": true,
+        "shown_at": 75
+      },
+      {
+        "visit": "v074",
+        "item": "i2",
+        "price": 18,
+        "available": false,
+        "shown_at": 75
+      },
+      {
+        "visit": "v074",
+        "item": "i3",
+        "price": 21,
+        "available": true,
+        "shown_at": 75
+      },
+      {
+        "visit": "v074",
+        "item": "i4",
+        "price": 24,
+        "available": true,
+        "shown_at": 75
+      },
+      {
+        "visit": "v075",
+        "item": "i1",
+        "price": 13,
+        "available": false,
+        "shown_at": 76
+      },
+      {
+        "visit": "v075",
+        "item": "i2",
+        "price": 16,
+        "available": true,
+        "shown_at": 76
+      },
+      {
+        "visit": "v075",
+        "item": "i3",
+        "price": 19,
+        "available": true,
+        "shown_at": 76
+      },
+      {
+        "visit": "v075",
+        "item": "i4",
+        "price": 22,
+        "available": true,
+        "shown_at": 76
+      },
+      {
+        "visit": "v075",
+        "item": "i6",
+        "price": 28,
+        "available": true,
+        "shown_at": 76
+      },
+      {
+        "visit": "v076",
+        "item": "i5",
+        "price": 26,
+        "available": true,
+        "shown_at": 77
+      },
+      {
+        "visit": "v077",
+        "item": "i1",
+        "price": 15,
+        "available": true,
+        "shown_at": 78
+      },
+      {
+        "visit": "v077",
+        "item": "i2",
+        "price": 18,
+        "available": true,
+        "shown_at": 78
+      },
+      {
+        "visit": "v077",
+        "item": "i3",
+        "price": 21,
+        "available": true,
+        "shown_at": 78
+      },
+      {
+        "visit": "v077",
+        "item": "i4",
+        "price": 24,
+        "available": true,
+        "shown_at": 78
+      },
+      {
+        "visit": "v078",
+        "item": "i1",
+        "price": 13,
+        "available": true,
+        "shown_at": 79
+      },
+      {
+        "visit": "v078",
+        "item": "i2",
+        "price": 16,
+        "available": true,
+        "shown_at": 79
+      },
+      {
+        "visit": "v078",
+        "item": "i3",
+        "price": 19,
+        "available": true,
+        "shown_at": 79
+      },
+      {
+        "visit": "v078",
+        "item": "i4",
+        "price": 22,
+        "available": false,
+        "shown_at": 79
+      },
+      {
+        "visit": "v079",
+        "item": "i1",
+        "price": 14,
+        "available": true,
+        "shown_at": 80
+      },
+      {
+        "visit": "v079",
+        "item": "i2",
+        "price": 17,
+        "available": true,
+        "shown_at": 80
+      },
+      {
+        "visit": "v079",
+        "item": "i3",
+        "price": 20,
+        "available": true,
+        "shown_at": 80
+      },
+      {
+        "visit": "v079",
+        "item": "i4",
+        "price": 23,
+        "available": true,
+        "shown_at": 80
+      },
+      {
+        "visit": "v080",
+        "item": "i5",
+        "price": 27,
+        "available": true,
+        "shown_at": 81
+      },
+      {
+        "visit": "v080",
+        "item": "i6",
+        "price": 30,
+        "available": true,
+        "shown_at": 81
+      },
+      {
+        "visit": "v081",
+        "item": "i1",
+        "price": 13,
+        "available": true,
+        "shown_at": 82
+      },
+      {
+        "visit": "v081",
+        "item": "i2",
+        "price": 16,
+        "available": false,
+        "shown_at": 82
+      },
+      {
+        "visit": "v081",
+        "item": "i3",
+        "price": 19,
+        "available": true,
+        "shown_at": 82
+      },
+      {
+        "visit": "v081",
+        "item": "i4",
+        "price": 22,
+        "available": true,
+        "shown_at": 82
+      },
+      {
+        "visit": "v082",
+        "item": "i1",
+        "price": 14,
+        "available": false,
+        "shown_at": 83
+      },
+      {
+        "visit": "v082",
+        "item": "i2",
+        "price": 17,
+        "available": true,
+        "shown_at": 83
+      },
+      {
+        "visit": "v082",
+        "item": "i3",
+        "price": 20,
+        "available": true,
+        "shown_at": 83
+      },
+      {
+        "visit": "v082",
+        "item": "i4",
+        "price": 23,
+        "available": true,
+        "shown_at": 83
+      },
+      {
+        "visit": "v083",
+        "item": "i1",
+        "price": 15,
+        "available": true,
+        "shown_at": 84
+      },
+      {
+        "visit": "v083",
+        "item": "i2",
+        "price": 18,
+        "available": true,
+        "shown_at": 84
+      },
+      {
+        "visit": "v083",
+        "item": "i3",
+        "price": 21,
+        "available": true,
+        "shown_at": 84
+      },
+      {
+        "visit": "v083",
+        "item": "i4",
+        "price": 24,
+        "available": true,
+        "shown_at": 84
+      },
+      {
+        "visit": "v084",
+        "item": "i5",
+        "price": 25,
+        "available": true,
+        "shown_at": 85
+      },
+      {
+        "visit": "v085",
+        "item": "i1",
+        "price": 14,
+        "available": false,
+        "shown_at": 86
+      },
+      {
+        "visit": "v085",
+        "item": "i2",
+        "price": 17,
+        "available": false,
+        "shown_at": 86
+      },
+      {
+        "visit": "v085",
+        "item": "i3",
+        "price": 20,
+        "available": true,
+        "shown_at": 86
+      },
+      {
+        "visit": "v085",
+        "item": "i4",
+        "price": 23,
+        "available": true,
+        "shown_at": 86
+      },
+      {
+        "visit": "v085",
+        "item": "i6",
+        "price": 29,
+        "available": true,
+        "shown_at": 86
+      },
+      {
+        "visit": "v086",
+        "item": "i1",
+        "price": 15,
+        "available": true,
+        "shown_at": 87
+      },
+      {
+        "visit": "v086",
+        "item": "i2",
+        "price": 18,
+        "available": true,
+        "shown_at": 87
+      },
+      {
+        "visit": "v086",
+        "item": "i3",
+        "price": 21,
+        "available": true,
+        "shown_at": 87
+      },
+      {
+        "visit": "v086",
+        "item": "i4",
+        "price": 24,
+        "available": true,
+        "shown_at": 87
+      },
+      {
+        "visit": "v087",
+        "item": "i1",
+        "price": 13,
+        "available": true,
+        "shown_at": 88
+      },
+      {
+        "visit": "v087",
+        "item": "i2",
+        "price": 16,
+        "available": true,
+        "shown_at": 88
+      },
+      {
+        "visit": "v087",
+        "item": "i3",
+        "price": 19,
+        "available": true,
+        "shown_at": 88
+      },
+      {
+        "visit": "v087",
+        "item": "i4",
+        "price": 22,
+        "available": true,
+        "shown_at": 88
+      },
+      {
+        "visit": "v088",
+        "item": "i5",
+        "price": 26,
+        "available": true,
+        "shown_at": 89
+      },
+      {
+        "visit": "v089",
+        "item": "i1",
+        "price": 15,
+        "available": true,
+        "shown_at": 90
+      },
+      {
+        "visit": "v089",
+        "item": "i2",
+        "price": 18,
+        "available": true,
+        "shown_at": 90
+      },
+      {
+        "visit": "v089",
+        "item": "i3",
+        "price": 21,
+        "available": true,
+        "shown_at": 90
+      },
+      {
+        "visit": "v089",
+        "item": "i4",
+        "price": 24,
+        "available": true,
+        "shown_at": 90
+      },
+      {
+        "visit": "v090",
+        "item": "i1",
+        "price": 13,
+        "available": true,
+        "shown_at": 1
+      },
+      {
+        "visit": "v090",
+        "item": "i2",
+        "price": 16,
+        "available": false,
+        "shown_at": 1
+      },
+      {
+        "visit": "v090",
+        "item": "i3",
+        "price": 19,
+        "available": false,
+        "shown_at": 1
+      },
+      {
+        "visit": "v090",
+        "item": "i4",
+        "price": 22,
+        "available": false,
+        "shown_at": 1
+      },
+      {
+        "visit": "v091",
+        "item": "i1",
+        "price": 14,
+        "available": true,
+        "shown_at": 2
+      },
+      {
+        "visit": "v091",
+        "item": "i2",
+        "price": 17,
+        "available": true,
+        "shown_at": 2
+      },
+      {
+        "visit": "v091",
+        "item": "i3",
+        "price": 20,
+        "available": true,
+        "shown_at": 2
+      },
+      {
+        "visit": "v091",
+        "item": "i4",
+        "price": 23,
+        "available": false,
+        "shown_at": 2
+      },
+      {
+        "visit": "v092",
+        "item": "i5",
+        "price": 27,
+        "available": true,
+        "shown_at": 3
+      },
+      {
+        "visit": "v093",
+        "item": "i1",
+        "price": 13,
+        "available": true,
+        "shown_at": 4
+      },
+      {
+        "visit": "v093",
+        "item": "i2",
+        "price": 16,
+        "available": true,
+        "shown_at": 4
+      },
+      {
+        "visit": "v093",
+        "item": "i3",
+        "price": 19,
+        "available": true,
+        "shown_at": 4
+      },
+      {
+        "visit": "v093",
+        "item": "i4",
+        "price": 22,
+        "available": true,
+        "shown_at": 4
+      },
+      {
+        "visit": "v094",
+        "item": "i1",
+        "price": 14,
+        "available": true,
+        "shown_at": 5
+      },
+      {
+        "visit": "v094",
+        "item": "i2",
+        "price": 17,
+        "available": true,
+        "shown_at": 5
+      },
+      {
+        "visit": "v094",
+        "item": "i3",
+        "price": 20,
+        "available": true,
+        "shown_at": 5
+      },
+      {
+        "visit": "v094",
+        "item": "i4",
+        "price": 23,
+        "available": false,
+        "shown_at": 5
+      },
+      {
+        "visit": "v095",
+        "item": "i1",
+        "price": 15,
+        "available": true,
+        "shown_at": 6
+      },
+      {
+        "visit": "v095",
+        "item": "i2",
+        "price": 18,
+        "available": true,
+        "shown_at": 6
+      },
+      {
+        "visit": "v095",
+        "item": "i3",
+        "price": 21,
+        "available": true,
+        "shown_at": 6
+      },
+      {
+        "visit": "v095",
+        "item": "i4",
+        "price": 24,
+        "available": false,
+        "shown_at": 6
+      },
+      {
+        "visit": "v096",
+        "item": "i5",
+        "price": 25,
+        "available": true,
+        "shown_at": 7
+      },
+      {
+        "visit": "v097",
+        "item": "i1",
+        "price": 14,
+        "available": true,
+        "shown_at": 8
+      },
+      {
+        "visit": "v097",
+        "item": "i2",
+        "price": 17,
+        "available": true,
+        "shown_at": 8
+      },
+      {
+        "visit": "v097",
+        "item": "i3",
+        "price": 20,
+        "available": true,
+        "shown_at": 8
+      },
+      {
+        "visit": "v097",
+        "item": "i4",
+        "price": 23,
+        "available": true,
+        "shown_at": 8
+      },
+      {
+        "visit": "v098",
+        "item": "i1",
+        "price": 15,
+        "available": true,
+        "shown_at": 9
+      },
+      {
+        "visit": "v098",
+        "item": "i2",
+        "price": 18,
+        "available": true,
+        "shown_at": 9
+      },
+      {
+        "visit": "v098",
+        "item": "i3",
+        "price": 21,
+        "available": true,
+        "shown_at": 9
+      },
+      {
+        "visit": "v098",
+        "item": "i4",
+        "price": 24,
+        "available": true,
+        "shown_at": 9
+      },
+      {
+        "visit": "v099",
+        "item": "i1",
+        "price": 13,
+        "available": true,
+        "shown_at": 10
+      },
+      {
+        "visit": "v099",
+        "item": "i2",
+        "price": 16,
+        "available": true,
+        "shown_at": 10
+      },
+      {
+        "visit": "v099",
+        "item": "i3",
+        "price": 19,
+        "available": true,
+        "shown_at": 10
+      },
+      {
+        "visit": "v099",
+        "item": "i4",
+        "price": 22,
+        "available": true,
+        "shown_at": 10
+      },
+      {
+        "visit": "v100",
+        "item": "i5",
+        "price": 26,
+        "available": true,
+        "shown_at": 11
+      },
+      {
+        "visit": "v101",
+        "item": "i1",
+        "price": 15,
+        "available": true,
+        "shown_at": 12
+      },
+      {
+        "visit": "v101",
+        "item": "i2",
+        "price": 18,
+        "available": true,
+        "shown_at": 12
+      },
+      {
+        "visit": "v101",
+        "item": "i3",
+        "price": 21,
+        "available": false,
+        "shown_at": 12
+      },
+      {
+        "visit": "v101",
+        "item": "i4",
+        "price": 24,
+        "available": true,
+        "shown_at": 12
+      },
+      {
+        "visit": "v102",
+        "item": "i1",
+        "price": 13,
+        "available": true,
+        "shown_at": 13
+      },
+      {
+        "visit": "v102",
+        "item": "i2",
+        "price": 16,
+        "available": true,
+        "shown_at": 13
+      },
+      {
+        "visit": "v102",
+        "item": "i3",
+        "price": 19,
+        "available": false,
+        "shown_at": 13
+      },
+      {
+        "visit": "v102",
+        "item": "i4",
+        "price": 22,
+        "available": false,
+        "shown_at": 13
+      },
+      {
+        "visit": "v103",
+        "item": "i1",
+        "price": 14,
+        "available": true,
+        "shown_at": 14
+      },
+      {
+        "visit": "v103",
+        "item": "i2",
+        "price": 17,
+        "available": true,
+        "shown_at": 14
+      },
+      {
+        "visit": "v103",
+        "item": "i3",
+        "price": 20,
+        "available": true,
+        "shown_at": 14
+      },
+      {
+        "visit": "v103",
+        "item": "i4",
+        "price": 23,
+        "available": true,
+        "shown_at": 14
+      },
+      {
+        "visit": "v104",
+        "item": "i5",
+        "price": 27,
+        "available": true,
+        "shown_at": 15
+      },
+      {
+        "visit": "v105",
+        "item": "i1",
+        "price": 13,
+        "available": true,
+        "shown_at": 16
+      },
+      {
+        "visit": "v105",
+        "item": "i2",
+        "price": 16,
+        "available": true,
+        "shown_at": 16
+      },
+      {
+        "visit": "v105",
+        "item": "i3",
+        "price": 19,
+        "available": true,
+        "shown_at": 16
+      },
+      {
+        "visit": "v105",
+        "item": "i4",
+        "price": 22,
+        "available": true,
+        "shown_at": 16
+      },
+      {
+        "visit": "v106",
+        "item": "i1",
+        "price": 14,
+        "available": true,
+        "shown_at": 17
+      },
+      {
+        "visit": "v106",
+        "item": "i2",
+        "price": 17,
+        "available": true,
+        "shown_at": 17
+      },
+      {
+        "visit": "v106",
+        "item": "i3",
+        "price": 20,
+        "available": true,
+        "shown_at": 17
+      },
+      {
+        "visit": "v106",
+        "item": "i4",
+        "price": 23,
+        "available": true,
+        "shown_at": 17
+      },
+      {
+        "visit": "v107",
+        "item": "i1",
+        "price": 15,
+        "available": true,
+        "shown_at": 18
+      },
+      {
+        "visit": "v107",
+        "item": "i2",
+        "price": 18,
+        "available": false,
+        "shown_at": 18
+      },
+      {
+        "visit": "v107",
+        "item": "i3",
+        "price": 21,
+        "available": true,
+        "shown_at": 18
+      },
+      {
+        "visit": "v107",
+        "item": "i4",
+        "price": 24,
+        "available": true,
+        "shown_at": 18
+      },
+      {
+        "visit": "v108",
+        "item": "i5",
+        "price": 25,
+        "available": true,
+        "shown_at": 19
+      },
+      {
+        "visit": "v109",
+        "item": "i1",
+        "price": 14,
+        "available": true,
+        "shown_at": 20
+      },
+      {
+        "visit": "v109",
+        "item": "i2",
+        "price": 17,
+        "available": true,
+        "shown_at": 20
+      },
+      {
+        "visit": "v109",
+        "item": "i3",
+        "price": 20,
+        "available": true,
+        "shown_at": 20
+      },
+      {
+        "visit": "v109",
+        "item": "i4",
+        "price": 23,
+        "available": true,
+        "shown_at": 20
+      },
+      {
+        "visit": "v110",
+        "item": "i1",
+        "price": 15,
+        "available": true,
+        "shown_at": 21
+      },
+      {
+        "visit": "v110",
+        "item": "i2",
+        "price": 18,
+        "available": true,
+        "shown_at": 21
+      },
+      {
+        "visit": "v110",
+        "item": "i3",
+        "price": 21,
+        "available": true,
+        "shown_at": 21
+      },
+      {
+        "visit": "v110",
+        "item": "i4",
+        "price": 24,
+        "available": true,
+        "shown_at": 21
+      },
+      {
+        "visit": "v111",
+        "item": "i1",
+        "price": 13,
+        "available": true,
+        "shown_at": 22
+      },
+      {
+        "visit": "v111",
+        "item": "i2",
+        "price": 16,
+        "available": true,
+        "shown_at": 22
+      },
+      {
+        "visit": "v111",
+        "item": "i3",
+        "price": 19,
+        "available": true,
+        "shown_at": 22
+      },
+      {
+        "visit": "v111",
+        "item": "i4",
+        "price": 22,
+        "available": false,
+        "shown_at": 22
+      },
+      {
+        "visit": "v112",
+        "item": "i5",
+        "price": 26,
+        "available": true,
+        "shown_at": 23
+      },
+      {
+        "visit": "v113",
+        "item": "i1",
+        "price": 15,
+        "available": true,
+        "shown_at": 24
+      },
+      {
+        "visit": "v113",
+        "item": "i2",
+        "price": 18,
+        "available": false,
+        "shown_at": 24
+      },
+      {
+        "visit": "v113",
+        "item": "i3",
+        "price": 21,
+        "available": true,
+        "shown_at": 24
+      },
+      {
+        "visit": "v113",
+        "item": "i4",
+        "price": 24,
+        "available": true,
+        "shown_at": 24
+      },
+      {
+        "visit": "v114",
+        "item": "i1",
+        "price": 13,
+        "available": true,
+        "shown_at": 25
+      },
+      {
+        "visit": "v114",
+        "item": "i2",
+        "price": 16,
+        "available": true,
+        "shown_at": 25
+      },
+      {
+        "visit": "v114",
+        "item": "i3",
+        "price": 19,
+        "available": true,
+        "shown_at": 25
+      },
+      {
+        "visit": "v114",
+        "item": "i4",
+        "price": 22,
+        "available": true,
+        "shown_at": 25
+      },
+      {
+        "visit": "v115",
+        "item": "i1",
+        "price": 14,
+        "available": true,
+        "shown_at": 26
+      },
+      {
+        "visit": "v115",
+        "item": "i2",
+        "price": 17,
+        "available": true,
+        "shown_at": 26
+      },
+      {
+        "visit": "v115",
+        "item": "i3",
+        "price": 20,
+        "available": true,
+        "shown_at": 26
+      },
+      {
+        "visit": "v115",
+        "item": "i4",
+        "price": 23,
+        "available": true,
+        "shown_at": 26
+      },
+      {
+        "visit": "v116",
+        "item": "i5",
+        "price": 27,
+        "available": true,
+        "shown_at": 27
+      },
+      {
+        "visit": "v117",
+        "item": "i1",
+        "price": 13,
+        "available": true,
+        "shown_at": 28
+      },
+      {
+        "visit": "v117",
+        "item": "i2",
+        "price": 16,
+        "available": true,
+        "shown_at": 28
+      },
+      {
+        "visit": "v117",
+        "item": "i3",
+        "price": 19,
+        "available": false,
+        "shown_at": 28
+      },
+      {
+        "visit": "v117",
+        "item": "i4",
+        "price": 22,
+        "available": true,
+        "shown_at": 28
+      },
+      {
+        "visit": "v118",
+        "item": "i1",
+        "price": 14,
+        "available": true,
+        "shown_at": 29
+      },
+      {
+        "visit": "v118",
+        "item": "i2",
+        "price": 17,
+        "available": false,
+        "shown_at": 29
+      },
+      {
+        "visit": "v118",
+        "item": "i3",
+        "price": 20,
+        "available": true,
+        "shown_at": 29
+      },
+      {
+        "visit": "v118",
+        "item": "i4",
+        "price": 23,
+        "available": true,
+        "shown_at": 29
+      },
+      {
+        "visit": "v119",
+        "item": "i1",
+        "price": 15,
+        "available": false,
+        "shown_at": 30
+      },
+      {
+        "visit": "v119",
+        "item": "i2",
+        "price": 18,
+        "available": true,
+        "shown_at": 30
+      },
+      {
+        "visit": "v119",
+        "item": "i3",
+        "price": 21,
+        "available": true,
+        "shown_at": 30
+      },
+      {
+        "visit": "v119",
+        "item": "i4",
+        "price": 24,
+        "available": true,
+        "shown_at": 30
+      },
+      {
+        "visit": "v120",
+        "item": "i5",
+        "price": 25,
+        "available": true,
+        "shown_at": 31
+      },
+      {
+        "visit": "v121",
+        "item": "i1",
+        "price": 14,
+        "available": true,
+        "shown_at": 32
+      },
+      {
+        "visit": "v121",
+        "item": "i2",
+        "price": 17,
+        "available": true,
+        "shown_at": 32
+      },
+      {
+        "visit": "v121",
+        "item": "i3",
+        "price": 20,
+        "available": true,
+        "shown_at": 32
+      },
+      {
+        "visit": "v121",
+        "item": "i4",
+        "price": 23,
+        "available": true,
+        "shown_at": 32
+      },
+      {
+        "visit": "v122",
+        "item": "i1",
+        "price": 15,
+        "available": true,
+        "shown_at": 33
+      },
+      {
+        "visit": "v122",
+        "item": "i2",
+        "price": 18,
+        "available": true,
+        "shown_at": 33
+      },
+      {
+        "visit": "v122",
+        "item": "i3",
+        "price": 21,
+        "available": false,
+        "shown_at": 33
+      },
+      {
+        "visit": "v122",
+        "item": "i4",
+        "price": 24,
+        "available": true,
+        "shown_at": 33
+      },
+      {
+        "visit": "v123",
+        "item": "i1",
+        "price": 13,
+        "available": true,
+        "shown_at": 34
+      },
+      {
+        "visit": "v123",
+        "item": "i2",
+        "price": 16,
+        "available": true,
+        "shown_at": 34
+      },
+      {
+        "visit": "v123",
+        "item": "i3",
+        "price": 19,
+        "available": true,
+        "shown_at": 34
+      },
+      {
+        "visit": "v123",
+        "item": "i4",
+        "price": 22,
+        "available": false,
+        "shown_at": 34
+      },
+      {
+        "visit": "v124",
+        "item": "i5",
+        "price": 26,
+        "available": true,
+        "shown_at": 35
+      },
+      {
+        "visit": "v125",
+        "item": "i1",
+        "price": 15,
+        "available": true,
+        "shown_at": 36
+      },
+      {
+        "visit": "v125",
+        "item": "i2",
+        "price": 18,
+        "available": true,
+        "shown_at": 36
+      },
+      {
+        "visit": "v125",
+        "item": "i3",
+        "price": 21,
+        "available": true,
+        "shown_at": 36
+      },
+      {
+        "visit": "v125",
+        "item": "i4",
+        "price": 24,
+        "available": true,
+        "shown_at": 36
+      },
+      {
+        "visit": "v126",
+        "item": "i1",
+        "price": 13,
+        "available": true,
+        "shown_at": 37
+      },
+      {
+        "visit": "v126",
+        "item": "i2",
+        "price": 16,
+        "available": true,
+        "shown_at": 37
+      },
+      {
+        "visit": "v126",
+        "item": "i3",
+        "price": 19,
+        "available": true,
+        "shown_at": 37
+      },
+      {
+        "visit": "v126",
+        "item": "i4",
+        "price": 22,
+        "available": true,
+        "shown_at": 37
+      },
+      {
+        "visit": "v127",
+        "item": "i1",
+        "price": 14,
+        "available": true,
+        "shown_at": 38
+      },
+      {
+        "visit": "v127",
+        "item": "i2",
+        "price": 17,
+        "available": true,
+        "shown_at": 38
+      },
+      {
+        "visit": "v127",
+        "item": "i3",
+        "price": 20,
+        "available": true,
+        "shown_at": 38
+      },
+      {
+        "visit": "v127",
+        "item": "i4",
+        "price": 23,
+        "available": true,
+        "shown_at": 38
+      },
+      {
+        "visit": "v128",
+        "item": "i5",
+        "price": 27,
+        "available": true,
+        "shown_at": 39
+      },
+      {
+        "visit": "v129",
+        "item": "i1",
+        "price": 13,
+        "available": true,
+        "shown_at": 40
+      },
+      {
+        "visit": "v129",
+        "item": "i2",
+        "price": 16,
+        "available": true,
+        "shown_at": 40
+      },
+      {
+        "visit": "v129",
+        "item": "i3",
+        "price": 19,
+        "available": true,
+        "shown_at": 40
+      },
+      {
+        "visit": "v129",
+        "item": "i4",
+        "price": 22,
+        "available": true,
+        "shown_at": 40
+      },
+      {
+        "visit": "v130",
+        "item": "i1",
+        "price": 14,
+        "available": true,
+        "shown_at": 41
+      },
+      {
+        "visit": "v130",
+        "item": "i2",
+        "price": 17,
+        "available": true,
+        "shown_at": 41
+      },
+      {
+        "visit": "v130",
+        "item": "i3",
+        "price": 20,
+        "available": true,
+        "shown_at": 41
+      },
+      {
+        "visit": "v130",
+        "item": "i4",
+        "price": 23,
+        "available": true,
+        "shown_at": 41
+      },
+      {
+        "visit": "v131",
+        "item": "i1",
+        "price": 15,
+        "available": true,
+        "shown_at": 42
+      },
+      {
+        "visit": "v131",
+        "item": "i2",
+        "price": 18,
+        "available": true,
+        "shown_at": 42
+      },
+      {
+        "visit": "v131",
+        "item": "i3",
+        "price": 21,
+        "available": true,
+        "shown_at": 42
+      },
+      {
+        "visit": "v131",
+        "item": "i4",
+        "price": 24,
+        "available": true,
+        "shown_at": 42
+      },
+      {
+        "visit": "v132",
+        "item": "i5",
+        "price": 25,
+        "available": true,
+        "shown_at": 43
+      },
+      {
+        "visit": "v133",
+        "item": "i1",
+        "price": 14,
+        "available": true,
+        "shown_at": 44
+      },
+      {
+        "visit": "v133",
+        "item": "i2",
+        "price": 17,
+        "available": true,
+        "shown_at": 44
+      },
+      {
+        "visit": "v133",
+        "item": "i3",
+        "price": 20,
+        "available": true,
+        "shown_at": 44
+      },
+      {
+        "visit": "v133",
+        "item": "i4",
+        "price": 23,
+        "available": true,
+        "shown_at": 44
+      },
+      {
+        "visit": "v134",
+        "item": "i1",
+        "price": 15,
+        "available": true,
+        "shown_at": 45
+      },
+      {
+        "visit": "v134",
+        "item": "i2",
+        "price": 18,
+        "available": true,
+        "shown_at": 45
+      },
+      {
+        "visit": "v134",
+        "item": "i3",
+        "price": 21,
+        "available": true,
+        "shown_at": 45
+      },
+      {
+        "visit": "v134",
+        "item": "i4",
+        "price": 24,
+        "available": false,
+        "shown_at": 45
+      },
+      {
+        "visit": "v135",
+        "item": "i1",
+        "price": 13,
+        "available": true,
+        "shown_at": 46
+      },
+      {
+        "visit": "v135",
+        "item": "i2",
+        "price": 16,
+        "available": true,
+        "shown_at": 46
+      },
+      {
+        "visit": "v135",
+        "item": "i3",
+        "price": 19,
+        "available": true,
+        "shown_at": 46
+      },
+      {
+        "visit": "v135",
+        "item": "i4",
+        "price": 22,
+        "available": true,
+        "shown_at": 46
+      },
+      {
+        "visit": "v136",
+        "item": "i5",
+        "price": 26,
+        "available": true,
+        "shown_at": 47
+      },
+      {
+        "visit": "v137",
+        "item": "i1",
+        "price": 15,
+        "available": true,
+        "shown_at": 48
+      },
+      {
+        "visit": "v137",
+        "item": "i2",
+        "price": 18,
+        "available": true,
+        "shown_at": 48
+      },
+      {
+        "visit": "v137",
+        "item": "i3",
+        "price": 21,
+        "available": true,
+        "shown_at": 48
+      },
+      {
+        "visit": "v137",
+        "item": "i4",
+        "price": 24,
+        "available": true,
+        "shown_at": 48
+      },
+      {
+        "visit": "v138",
+        "item": "i1",
+        "price": 13,
+        "available": true,
+        "shown_at": 49
+      },
+      {
+        "visit": "v138",
+        "item": "i2",
+        "price": 16,
+        "available": false,
+        "shown_at": 49
+      },
+      {
+        "visit": "v138",
+        "item": "i3",
+        "price": 19,
+        "available": true,
+        "shown_at": 49
+      },
+      {
+        "visit": "v138",
+        "item": "i4",
+        "price": 22,
+        "available": false,
+        "shown_at": 49
+      },
+      {
+        "visit": "v139",
+        "item": "i1",
+        "price": 14,
+        "available": true,
+        "shown_at": 50
+      },
+      {
+        "visit": "v139",
+        "item": "i2",
+        "price": 17,
+        "available": true,
+        "shown_at": 50
+      },
+      {
+        "visit": "v139",
+        "item": "i3",
+        "price": 20,
+        "available": true,
+        "shown_at": 50
+      },
+      {
+        "visit": "v139",
+        "item": "i4",
+        "price": 23,
+        "available": true,
+        "shown_at": 50
+      },
+      {
+        "visit": "v140",
+        "item": "i5",
+        "price": 27,
+        "available": true,
+        "shown_at": 51
+      },
+      {
+        "visit": "v140",
+        "item": "i6",
+        "price": 30,
+        "available": true,
+        "shown_at": 51
+      },
+      {
+        "visit": "v141",
+        "item": "i1",
+        "price": 13,
+        "available": true,
+        "shown_at": 52
+      },
+      {
+        "visit": "v141",
+        "item": "i2",
+        "price": 16,
+        "available": true,
+        "shown_at": 52
+      },
+      {
+        "visit": "v141",
+        "item": "i3",
+        "price": 19,
+        "available": false,
+        "shown_at": 52
+      },
+      {
+        "visit": "v141",
+        "item": "i4",
+        "price": 22,
+        "available": true,
+        "shown_at": 52
+      },
+      {
+        "visit": "v142",
+        "item": "i1",
+        "price": 14,
+        "available": true,
+        "shown_at": 53
+      },
+      {
+        "visit": "v142",
+        "item": "i2",
+        "price": 17,
+        "available": true,
+        "shown_at": 53
+      },
+      {
+        "visit": "v142",
+        "item": "i3",
+        "price": 20,
+        "available": true,
+        "shown_at": 53
+      },
+      {
+        "visit": "v142",
+        "item": "i4",
+        "price": 23,
+        "available": true,
+        "shown_at": 53
+      },
+      {
+        "visit": "v143",
+        "item": "i1",
+        "price": 15,
+        "available": true,
+        "shown_at": 54
+      },
+      {
+        "visit": "v143",
+        "item": "i2",
+        "price": 18,
+        "available": true,
+        "shown_at": 54
+      },
+      {
+        "visit": "v143",
+        "item": "i3",
+        "price": 21,
+        "available": true,
+        "shown_at": 54
+      },
+      {
+        "visit": "v143",
+        "item": "i4",
+        "price": 24,
+        "available": true,
+        "shown_at": 54
+      },
+      {
+        "visit": "v144",
+        "item": "i5",
+        "price": 25,
+        "available": true,
+        "shown_at": 55
+      },
+      {
+        "visit": "v145",
+        "item": "i1",
+        "price": 14,
+        "available": true,
+        "shown_at": 56
+      },
+      {
+        "visit": "v145",
+        "item": "i2",
+        "price": 17,
+        "available": true,
+        "shown_at": 56
+      },
+      {
+        "visit": "v145",
+        "item": "i3",
+        "price": 20,
+        "available": true,
+        "shown_at": 56
+      },
+      {
+        "visit": "v145",
+        "item": "i4",
+        "price": 23,
+        "available": true,
+        "shown_at": 56
+      },
+      {
+        "visit": "v145",
+        "item": "i6",
+        "price": 29,
+        "available": true,
+        "shown_at": 56
+      },
+      {
+        "visit": "v146",
+        "item": "i1",
+        "price": 15,
+        "available": true,
+        "shown_at": 57
+      },
+      {
+        "visit": "v146",
+        "item": "i2",
+        "price": 18,
+        "available": true,
+        "shown_at": 57
+      },
+      {
+        "visit": "v146",
+        "item": "i3",
+        "price": 21,
+        "available": true,
+        "shown_at": 57
+      },
+      {
+        "visit": "v146",
+        "item": "i4",
+        "price": 24,
+        "available": false,
+        "shown_at": 57
+      },
+      {
+        "visit": "v147",
+        "item": "i1",
+        "price": 13,
+        "available": true,
+        "shown_at": 58
+      },
+      {
+        "visit": "v147",
+        "item": "i2",
+        "price": 16,
+        "available": true,
+        "shown_at": 58
+      },
+      {
+        "visit": "v147",
+        "item": "i3",
+        "price": 19,
+        "available": true,
+        "shown_at": 58
+      },
+      {
+        "visit": "v147",
+        "item": "i4",
+        "price": 22,
+        "available": true,
+        "shown_at": 58
+      },
+      {
+        "visit": "v148",
+        "item": "i5",
+        "price": 26,
+        "available": true,
+        "shown_at": 59
+      },
+      {
+        "visit": "v149",
+        "item": "i1",
+        "price": 15,
+        "available": true,
+        "shown_at": 60
+      },
+      {
+        "visit": "v149",
+        "item": "i2",
+        "price": 18,
+        "available": true,
+        "shown_at": 60
+      },
+      {
+        "visit": "v149",
+        "item": "i3",
+        "price": 21,
+        "available": false,
+        "shown_at": 60
+      },
+      {
+        "visit": "v149",
+        "item": "i4",
+        "price": 24,
+        "available": true,
+        "shown_at": 60
+      },
+      {
+        "visit": "v150",
+        "item": "i1",
+        "price": 13,
+        "available": true,
+        "shown_at": 61
+      },
+      {
+        "visit": "v150",
+        "item": "i2",
+        "price": 16,
+        "available": true,
+        "shown_at": 61
+      },
+      {
+        "visit": "v150",
+        "item": "i3",
+        "price": 19,
+        "available": false,
+        "shown_at": 61
+      },
+      {
+        "visit": "v150",
+        "item": "i4",
+        "price": 22,
+        "available": true,
+        "shown_at": 61
+      },
+      {
+        "visit": "v150",
+        "item": "i6",
+        "price": 28,
+        "available": true,
+        "shown_at": 61
+      },
+      {
+        "visit": "v151",
+        "item": "i1",
+        "price": 14,
+        "available": true,
+        "shown_at": 62
+      },
+      {
+        "visit": "v151",
+        "item": "i2",
+        "price": 17,
+        "available": true,
+        "shown_at": 62
+      },
+      {
+        "visit": "v151",
+        "item": "i3",
+        "price": 20,
+        "available": true,
+        "shown_at": 62
+      },
+      {
+        "visit": "v151",
+        "item": "i4",
+        "price": 23,
+        "available": true,
+        "shown_at": 62
+      },
+      {
+        "visit": "v152",
+        "item": "i5",
+        "price": 27,
+        "available": true,
+        "shown_at": 63
+      },
+      {
+        "visit": "v153",
+        "item": "i1",
+        "price": 13,
+        "available": true,
+        "shown_at": 64
+      },
+      {
+        "visit": "v153",
+        "item": "i2",
+        "price": 16,
+        "available": true,
+        "shown_at": 64
+      },
+      {
+        "visit": "v153",
+        "item": "i3",
+        "price": 19,
+        "available": false,
+        "shown_at": 64
+      },
+      {
+        "visit": "v153",
+        "item": "i4",
+        "price": 22,
+        "available": true,
+        "shown_at": 64
+      },
+      {
+        "visit": "v154",
+        "item": "i1",
+        "price": 14,
+        "available": false,
+        "shown_at": 65
+      },
+      {
+        "visit": "v154",
+        "item": "i2",
+        "price": 17,
+        "available": true,
+        "shown_at": 65
+      },
+      {
+        "visit": "v154",
+        "item": "i3",
+        "price": 20,
+        "available": true,
+        "shown_at": 65
+      },
+      {
+        "visit": "v154",
+        "item": "i4",
+        "price": 23,
+        "available": true,
+        "shown_at": 65
+      },
+      {
+        "visit": "v155",
+        "item": "i1",
+        "price": 15,
+        "available": true,
+        "shown_at": 66
+      },
+      {
+        "visit": "v155",
+        "item": "i2",
+        "price": 18,
+        "available": true,
+        "shown_at": 66
+      },
+      {
+        "visit": "v155",
+        "item": "i3",
+        "price": 21,
+        "available": true,
+        "shown_at": 66
+      },
+      {
+        "visit": "v155",
+        "item": "i4",
+        "price": 24,
+        "available": true,
+        "shown_at": 66
+      },
+      {
+        "visit": "v155",
+        "item": "i6",
+        "price": 30,
+        "available": true,
+        "shown_at": 66
+      },
+      {
+        "visit": "v156",
+        "item": "i5",
+        "price": 25,
+        "available": true,
+        "shown_at": 67
+      },
+      {
+        "visit": "v157",
+        "item": "i1",
+        "price": 14,
+        "available": true,
+        "shown_at": 68
+      },
+      {
+        "visit": "v157",
+        "item": "i2",
+        "price": 17,
+        "available": true,
+        "shown_at": 68
+      },
+      {
+        "visit": "v157",
+        "item": "i3",
+        "price": 20,
+        "available": true,
+        "shown_at": 68
+      },
+      {
+        "visit": "v157",
+        "item": "i4",
+        "price": 23,
+        "available": true,
+        "shown_at": 68
+      },
+      {
+        "visit": "v158",
+        "item": "i1",
+        "price": 15,
+        "available": true,
+        "shown_at": 69
+      },
+      {
+        "visit": "v158",
+        "item": "i2",
+        "price": 18,
+        "available": true,
+        "shown_at": 69
+      },
+      {
+        "visit": "v158",
+        "item": "i3",
+        "price": 21,
+        "available": true,
+        "shown_at": 69
+      },
+      {
+        "visit": "v158",
+        "item": "i4",
+        "price": 24,
+        "available": true,
+        "shown_at": 69
+      },
+      {
+        "visit": "v159",
+        "item": "i1",
+        "price": 13,
+        "available": true,
+        "shown_at": 70
+      },
+      {
+        "visit": "v159",
+        "item": "i2",
+        "price": 16,
+        "available": true,
+        "shown_at": 70
+      },
+      {
+        "visit": "v159",
+        "item": "i3",
+        "price": 19,
+        "available": true,
+        "shown_at": 70
+      },
+      {
+        "visit": "v159",
+        "item": "i4",
+        "price": 22,
+        "available": true,
+        "shown_at": 70
+      },
+      {
+        "visit": "v160",
+        "item": "i5",
+        "price": 26,
+        "available": true,
+        "shown_at": 71
+      },
+      {
+        "visit": "v160",
+        "item": "i6",
+        "price": 29,
+        "available": true,
+        "shown_at": 71
+      },
+      {
+        "visit": "v161",
+        "item": "i1",
+        "price": 15,
+        "available": true,
+        "shown_at": 72
+      },
+      {
+        "visit": "v161",
+        "item": "i2",
+        "price": 18,
+        "available": false,
+        "shown_at": 72
+      },
+      {
+        "visit": "v161",
+        "item": "i3",
+        "price": 21,
+        "available": true,
+        "shown_at": 72
+      },
+      {
+        "visit": "v161",
+        "item": "i4",
+        "price": 24,
+        "available": true,
+        "shown_at": 72
+      },
+      {
+        "visit": "v162",
+        "item": "i1",
+        "price": 13,
+        "available": true,
+        "shown_at": 73
+      },
+      {
+        "visit": "v162",
+        "item": "i2",
+        "price": 16,
+        "available": true,
+        "shown_at": 73
+      },
+      {
+        "visit": "v162",
+        "item": "i3",
+        "price": 19,
+        "available": true,
+        "shown_at": 73
+      },
+      {
+        "visit": "v162",
+        "item": "i4",
+        "price": 22,
+        "available": true,
+        "shown_at": 73
+      },
+      {
+        "visit": "v163",
+        "item": "i1",
+        "price": 14,
+        "available": true,
+        "shown_at": 74
+      },
+      {
+        "visit": "v163",
+        "item": "i2",
+        "price": 17,
+        "available": true,
+        "shown_at": 74
+      },
+      {
+        "visit": "v163",
+        "item": "i3",
+        "price": 20,
+        "available": true,
+        "shown_at": 74
+      },
+      {
+        "visit": "v163",
+        "item": "i4",
+        "price": 23,
+        "available": true,
+        "shown_at": 74
+      },
+      {
+        "visit": "v164",
+        "item": "i5",
+        "price": 27,
+        "available": false,
+        "shown_at": 75
+      },
+      {
+        "visit": "v165",
+        "item": "i1",
+        "price": 13,
+        "available": true,
+        "shown_at": 76
+      },
+      {
+        "visit": "v165",
+        "item": "i2",
+        "price": 16,
+        "available": true,
+        "shown_at": 76
+      },
+      {
+        "visit": "v165",
+        "item": "i3",
+        "price": 19,
+        "available": false,
+        "shown_at": 76
+      },
+      {
+        "visit": "v165",
+        "item": "i4",
+        "price": 22,
+        "available": true,
+        "shown_at": 76
+      },
+      {
+        "visit": "v165",
+        "item": "i6",
+        "price": 28,
+        "available": true,
+        "shown_at": 76
+      },
+      {
+        "visit": "v166",
+        "item": "i1",
+        "price": 14,
+        "available": true,
+        "shown_at": 77
+      },
+      {
+        "visit": "v166",
+        "item": "i2",
+        "price": 17,
+        "available": true,
+        "shown_at": 77
+      },
+      {
+        "visit": "v166",
+        "item": "i3",
+        "price": 20,
+        "available": false,
+        "shown_at": 77
+      },
+      {
+        "visit": "v166",
+        "item": "i4",
+        "price": 23,
+        "available": true,
+        "shown_at": 77
+      },
+      {
+        "visit": "v167",
+        "item": "i1",
+        "price": 15,
+        "available": true,
+        "shown_at": 78
+      },
+      {
+        "visit": "v167",
+        "item": "i2",
+        "price": 18,
+        "available": true,
+        "shown_at": 78
+      },
+      {
+        "visit": "v167",
+        "item": "i3",
+        "price": 21,
+        "available": true,
+        "shown_at": 78
+      },
+      {
+        "visit": "v167",
+        "item": "i4",
+        "price": 24,
+        "available": true,
+        "shown_at": 78
+      },
+      {
+        "visit": "v168",
+        "item": "i5",
+        "price": 25,
+        "available": true,
+        "shown_at": 79
+      },
+      {
+        "visit": "v169",
+        "item": "i1",
+        "price": 14,
+        "available": true,
+        "shown_at": 80
+      },
+      {
+        "visit": "v169",
+        "item": "i2",
+        "price": 17,
+        "available": true,
+        "shown_at": 80
+      },
+      {
+        "visit": "v169",
+        "item": "i3",
+        "price": 20,
+        "available": false,
+        "shown_at": 80
+      },
+      {
+        "visit": "v169",
+        "item": "i4",
+        "price": 23,
+        "available": true,
+        "shown_at": 80
+      },
+      {
+        "visit": "v170",
+        "item": "i1",
+        "price": 15,
+        "available": true,
+        "shown_at": 81
+      },
+      {
+        "visit": "v170",
+        "item": "i2",
+        "price": 18,
+        "available": true,
+        "shown_at": 81
+      },
+      {
+        "visit": "v170",
+        "item": "i3",
+        "price": 21,
+        "available": true,
+        "shown_at": 81
+      },
+      {
+        "visit": "v170",
+        "item": "i4",
+        "price": 24,
+        "available": true,
+        "shown_at": 81
+      },
+      {
+        "visit": "v170",
+        "item": "i6",
+        "price": 30,
+        "available": true,
+        "shown_at": 81
+      },
+      {
+        "visit": "v171",
+        "item": "i1",
+        "price": 13,
+        "available": false,
+        "shown_at": 82
+      },
+      {
+        "visit": "v171",
+        "item": "i2",
+        "price": 16,
+        "available": true,
+        "shown_at": 82
+      },
+      {
+        "visit": "v171",
+        "item": "i3",
+        "price": 19,
+        "available": true,
+        "shown_at": 82
+      },
+      {
+        "visit": "v171",
+        "item": "i4",
+        "price": 22,
+        "available": true,
+        "shown_at": 82
+      },
+      {
+        "visit": "v172",
+        "item": "i5",
+        "price": 26,
+        "available": true,
+        "shown_at": 83
+      },
+      {
+        "visit": "v173",
+        "item": "i1",
+        "price": 15,
+        "available": true,
+        "shown_at": 84
+      },
+      {
+        "visit": "v173",
+        "item": "i2",
+        "price": 18,
+        "available": true,
+        "shown_at": 84
+      },
+      {
+        "visit": "v173",
+        "item": "i3",
+        "price": 21,
+        "available": true,
+        "shown_at": 84
+      },
+      {
+        "visit": "v173",
+        "item": "i4",
+        "price": 24,
+        "available": true,
+        "shown_at": 84
+      },
+      {
+        "visit": "v174",
+        "item": "i1",
+        "price": 13,
+        "available": true,
+        "shown_at": 85
+      },
+      {
+        "visit": "v174",
+        "item": "i2",
+        "price": 16,
+        "available": true,
+        "shown_at": 85
+      },
+      {
+        "visit": "v174",
+        "item": "i3",
+        "price": 19,
+        "available": false,
+        "shown_at": 85
+      },
+      {
+        "visit": "v174",
+        "item": "i4",
+        "price": 22,
+        "available": true,
+        "shown_at": 85
+      },
+      {
+        "visit": "v175",
+        "item": "i1",
+        "price": 14,
+        "available": true,
+        "shown_at": 86
+      },
+      {
+        "visit": "v175",
+        "item": "i2",
+        "price": 17,
+        "available": true,
+        "shown_at": 86
+      },
+      {
+        "visit": "v175",
+        "item": "i3",
+        "price": 20,
+        "available": false,
+        "shown_at": 86
+      },
+      {
+        "visit": "v175",
+        "item": "i4",
+        "price": 23,
+        "available": true,
+        "shown_at": 86
+      },
+      {
+        "visit": "v175",
+        "item": "i6",
+        "price": 29,
+        "available": true,
+        "shown_at": 86
+      },
+      {
+        "visit": "v176",
+        "item": "i5",
+        "price": 27,
+        "available": true,
+        "shown_at": 87
+      },
+      {
+        "visit": "v177",
+        "item": "i1",
+        "price": 13,
+        "available": true,
+        "shown_at": 88
+      },
+      {
+        "visit": "v177",
+        "item": "i2",
+        "price": 16,
+        "available": true,
+        "shown_at": 88
+      },
+      {
+        "visit": "v177",
+        "item": "i3",
+        "price": 19,
+        "available": true,
+        "shown_at": 88
+      },
+      {
+        "visit": "v177",
+        "item": "i4",
+        "price": 22,
+        "available": true,
+        "shown_at": 88
+      },
+      {
+        "visit": "v178",
+        "item": "i1",
+        "price": 14,
+        "available": true,
+        "shown_at": 89
+      },
+      {
+        "visit": "v178",
+        "item": "i2",
+        "price": 17,
+        "available": true,
+        "shown_at": 89
+      },
+      {
+        "visit": "v178",
+        "item": "i3",
+        "price": 20,
+        "available": true,
+        "shown_at": 89
+      },
+      {
+        "visit": "v178",
+        "item": "i4",
+        "price": 23,
+        "available": true,
+        "shown_at": 89
+      },
+      {
+        "visit": "v179",
+        "item": "i1",
+        "price": 15,
+        "available": true,
+        "shown_at": 90
+      },
+      {
+        "visit": "v179",
+        "item": "i2",
+        "price": 18,
+        "available": true,
+        "shown_at": 90
+      },
+      {
+        "visit": "v179",
+        "item": "i3",
+        "price": 21,
+        "available": true,
+        "shown_at": 90
+      },
+      {
+        "visit": "v179",
+        "item": "i4",
+        "price": 24,
+        "available": false,
+        "shown_at": 90
+      },
+      {
+        "visit": "v180",
+        "item": "i5",
+        "price": 25,
+        "available": false,
+        "shown_at": 1
+      },
+      {
+        "visit": "v181",
+        "item": "i1",
+        "price": 14,
+        "available": true,
+        "shown_at": 2
+      },
+      {
+        "visit": "v181",
+        "item": "i2",
+        "price": 17,
+        "available": true,
+        "shown_at": 2
+      },
+      {
+        "visit": "v181",
+        "item": "i3",
+        "price": 20,
+        "available": true,
+        "shown_at": 2
+      },
+      {
+        "visit": "v181",
+        "item": "i4",
+        "price": 23,
+        "available": true,
+        "shown_at": 2
+      },
+      {
+        "visit": "v182",
+        "item": "i1",
+        "price": 15,
+        "available": true,
+        "shown_at": 3
+      },
+      {
+        "visit": "v182",
+        "item": "i2",
+        "price": 18,
+        "available": true,
+        "shown_at": 3
+      },
+      {
+        "visit": "v182",
+        "item": "i3",
+        "price": 21,
+        "available": true,
+        "shown_at": 3
+      },
+      {
+        "visit": "v182",
+        "item": "i4",
+        "price": 24,
+        "available": true,
+        "shown_at": 3
+      },
+      {
+        "visit": "v183",
+        "item": "i1",
+        "price": 13,
+        "available": true,
+        "shown_at": 4
+      },
+      {
+        "visit": "v183",
+        "item": "i2",
+        "price": 16,
+        "available": false,
+        "shown_at": 4
+      },
+      {
+        "visit": "v183",
+        "item": "i3",
+        "price": 19,
+        "available": true,
+        "shown_at": 4
+      },
+      {
+        "visit": "v183",
+        "item": "i4",
+        "price": 22,
+        "available": true,
+        "shown_at": 4
+      },
+      {
+        "visit": "v184",
+        "item": "i5",
+        "price": 26,
+        "available": true,
+        "shown_at": 5
+      },
+      {
+        "visit": "v185",
+        "item": "i1",
+        "price": 15,
+        "available": true,
+        "shown_at": 6
+      },
+      {
+        "visit": "v185",
+        "item": "i2",
+        "price": 18,
+        "available": true,
+        "shown_at": 6
+      },
+      {
+        "visit": "v185",
+        "item": "i3",
+        "price": 21,
+        "available": true,
+        "shown_at": 6
+      },
+      {
+        "visit": "v185",
+        "item": "i4",
+        "price": 24,
+        "available": true,
+        "shown_at": 6
+      },
+      {
+        "visit": "v186",
+        "item": "i1",
+        "price": 13,
+        "available": true,
+        "shown_at": 7
+      },
+      {
+        "visit": "v186",
+        "item": "i2",
+        "price": 16,
+        "available": true,
+        "shown_at": 7
+      },
+      {
+        "visit": "v186",
+        "item": "i3",
+        "price": 19,
+        "available": true,
+        "shown_at": 7
+      },
+      {
+        "visit": "v186",
+        "item": "i4",
+        "price": 22,
+        "available": true,
+        "shown_at": 7
+      },
+      {
+        "visit": "v187",
+        "item": "i1",
+        "price": 14,
+        "available": true,
+        "shown_at": 8
+      },
+      {
+        "visit": "v187",
+        "item": "i2",
+        "price": 17,
+        "available": true,
+        "shown_at": 8
+      },
+      {
+        "visit": "v187",
+        "item": "i3",
+        "price": 20,
+        "available": true,
+        "shown_at": 8
+      },
+      {
+        "visit": "v187",
+        "item": "i4",
+        "price": 23,
+        "available": true,
+        "shown_at": 8
+      },
+      {
+        "visit": "v188",
+        "item": "i5",
+        "price": 27,
+        "available": true,
+        "shown_at": 9
+      },
+      {
+        "visit": "v189",
+        "item": "i1",
+        "price": 13,
+        "available": true,
+        "shown_at": 10
+      },
+      {
+        "visit": "v189",
+        "item": "i2",
+        "price": 16,
+        "available": true,
+        "shown_at": 10
+      },
+      {
+        "visit": "v189",
+        "item": "i3",
+        "price": 19,
+        "available": true,
+        "shown_at": 10
+      },
+      {
+        "visit": "v189",
+        "item": "i4",
+        "price": 22,
+        "available": true,
+        "shown_at": 10
+      },
+      {
+        "visit": "v190",
+        "item": "i1",
+        "price": 14,
+        "available": true,
+        "shown_at": 11
+      },
+      {
+        "visit": "v190",
+        "item": "i2",
+        "price": 17,
+        "available": true,
+        "shown_at": 11
+      },
+      {
+        "visit": "v190",
+        "item": "i3",
+        "price": 20,
+        "available": true,
+        "shown_at": 11
+      },
+      {
+        "visit": "v190",
+        "item": "i4",
+        "price": 23,
+        "available": true,
+        "shown_at": 11
+      },
+      {
+        "visit": "v191",
+        "item": "i1",
+        "price": 15,
+        "available": true,
+        "shown_at": 12
+      },
+      {
+        "visit": "v191",
+        "item": "i2",
+        "price": 18,
+        "available": true,
+        "shown_at": 12
+      },
+      {
+        "visit": "v191",
+        "item": "i3",
+        "price": 21,
+        "available": false,
+        "shown_at": 12
+      },
+      {
+        "visit": "v191",
+        "item": "i4",
+        "price": 24,
+        "available": true,
+        "shown_at": 12
+      },
+      {
+        "visit": "v192",
+        "item": "i5",
+        "price": 25,
+        "available": false,
+        "shown_at": 13
+      },
+      {
+        "visit": "v193",
+        "item": "i1",
+        "price": 14,
+        "available": true,
+        "shown_at": 14
+      },
+      {
+        "visit": "v193",
+        "item": "i2",
+        "price": 17,
+        "available": true,
+        "shown_at": 14
+      },
+      {
+        "visit": "v193",
+        "item": "i3",
+        "price": 20,
+        "available": false,
+        "shown_at": 14
+      },
+      {
+        "visit": "v193",
+        "item": "i4",
+        "price": 23,
+        "available": true,
+        "shown_at": 14
+      },
+      {
+        "visit": "v194",
+        "item": "i1",
+        "price": 15,
+        "available": true,
+        "shown_at": 15
+      },
+      {
+        "visit": "v194",
+        "item": "i2",
+        "price": 18,
+        "available": true,
+        "shown_at": 15
+      },
+      {
+        "visit": "v194",
+        "item": "i3",
+        "price": 21,
+        "available": true,
+        "shown_at": 15
+      },
+      {
+        "visit": "v194",
+        "item": "i4",
+        "price": 24,
+        "available": true,
+        "shown_at": 15
+      },
+      {
+        "visit": "v195",
+        "item": "i1",
+        "price": 13,
+        "available": true,
+        "shown_at": 16
+      },
+      {
+        "visit": "v195",
+        "item": "i2",
+        "price": 16,
+        "available": true,
+        "shown_at": 16
+      },
+      {
+        "visit": "v195",
+        "item": "i3",
+        "price": 19,
+        "available": true,
+        "shown_at": 16
+      },
+      {
+        "visit": "v195",
+        "item": "i4",
+        "price": 22,
+        "available": true,
+        "shown_at": 16
+      },
+      {
+        "visit": "v196",
+        "item": "i5",
+        "price": 26,
+        "available": true,
+        "shown_at": 17
+      },
+      {
+        "visit": "v197",
+        "item": "i1",
+        "price": 15,
+        "available": true,
+        "shown_at": 18
+      },
+      {
+        "visit": "v197",
+        "item": "i2",
+        "price": 18,
+        "available": true,
+        "shown_at": 18
+      },
+      {
+        "visit": "v197",
+        "item": "i3",
+        "price": 21,
+        "available": true,
+        "shown_at": 18
+      },
+      {
+        "visit": "v197",
+        "item": "i4",
+        "price": 24,
+        "available": true,
+        "shown_at": 18
+      },
+      {
+        "visit": "v198",
+        "item": "i1",
+        "price": 13,
+        "available": true,
+        "shown_at": 19
+      },
+      {
+        "visit": "v198",
+        "item": "i2",
+        "price": 16,
+        "available": true,
+        "shown_at": 19
+      },
+      {
+        "visit": "v198",
+        "item": "i3",
+        "price": 19,
+        "available": true,
+        "shown_at": 19
+      },
+      {
+        "visit": "v198",
+        "item": "i4",
+        "price": 22,
+        "available": true,
+        "shown_at": 19
+      },
+      {
+        "visit": "v199",
+        "item": "i1",
+        "price": 14,
+        "available": false,
+        "shown_at": 20
+      },
+      {
+        "visit": "v199",
+        "item": "i2",
+        "price": 17,
+        "available": true,
+        "shown_at": 20
+      },
+      {
+        "visit": "v199",
+        "item": "i3",
+        "price": 20,
+        "available": true,
+        "shown_at": 20
+      },
+      {
+        "visit": "v199",
+        "item": "i4",
+        "price": 23,
+        "available": true,
+        "shown_at": 20
+      },
+      {
+        "visit": "v200",
+        "item": "i5",
+        "price": 27,
+        "available": true,
+        "shown_at": 21
+      },
+      {
+        "visit": "v201",
+        "item": "i1",
+        "price": 13,
+        "available": true,
+        "shown_at": 22
+      },
+      {
+        "visit": "v201",
+        "item": "i2",
+        "price": 16,
+        "available": true,
+        "shown_at": 22
+      },
+      {
+        "visit": "v201",
+        "item": "i3",
+        "price": 19,
+        "available": true,
+        "shown_at": 22
+      },
+      {
+        "visit": "v201",
+        "item": "i4",
+        "price": 22,
+        "available": true,
+        "shown_at": 22
+      },
+      {
+        "visit": "v202",
+        "item": "i1",
+        "price": 14,
+        "available": true,
+        "shown_at": 23
+      },
+      {
+        "visit": "v202",
+        "item": "i2",
+        "price": 17,
+        "available": true,
+        "shown_at": 23
+      },
+      {
+        "visit": "v202",
+        "item": "i3",
+        "price": 20,
+        "available": true,
+        "shown_at": 23
+      },
+      {
+        "visit": "v202",
+        "item": "i4",
+        "price": 23,
+        "available": true,
+        "shown_at": 23
+      },
+      {
+        "visit": "v203",
+        "item": "i1",
+        "price": 15,
+        "available": true,
+        "shown_at": 24
+      },
+      {
+        "visit": "v203",
+        "item": "i2",
+        "price": 18,
+        "available": true,
+        "shown_at": 24
+      },
+      {
+        "visit": "v203",
+        "item": "i3",
+        "price": 21,
+        "available": true,
+        "shown_at": 24
+      },
+      {
+        "visit": "v203",
+        "item": "i4",
+        "price": 24,
+        "available": true,
+        "shown_at": 24
+      },
+      {
+        "visit": "v204",
+        "item": "i5",
+        "price": 25,
+        "available": true,
+        "shown_at": 25
+      },
+      {
+        "visit": "v205",
+        "item": "i1",
+        "price": 14,
+        "available": true,
+        "shown_at": 26
+      },
+      {
+        "visit": "v205",
+        "item": "i2",
+        "price": 17,
+        "available": true,
+        "shown_at": 26
+      },
+      {
+        "visit": "v205",
+        "item": "i3",
+        "price": 20,
+        "available": true,
+        "shown_at": 26
+      },
+      {
+        "visit": "v205",
+        "item": "i4",
+        "price": 23,
+        "available": true,
+        "shown_at": 26
+      },
+      {
+        "visit": "v206",
+        "item": "i1",
+        "price": 15,
+        "available": true,
+        "shown_at": 27
+      },
+      {
+        "visit": "v206",
+        "item": "i2",
+        "price": 18,
+        "available": true,
+        "shown_at": 27
+      },
+      {
+        "visit": "v206",
+        "item": "i3",
+        "price": 21,
+        "available": true,
+        "shown_at": 27
+      },
+      {
+        "visit": "v206",
+        "item": "i4",
+        "price": 24,
+        "available": false,
+        "shown_at": 27
+      },
+      {
+        "visit": "v207",
+        "item": "i1",
+        "price": 13,
+        "available": true,
+        "shown_at": 28
+      },
+      {
+        "visit": "v207",
+        "item": "i2",
+        "price": 16,
+        "available": true,
+        "shown_at": 28
+      },
+      {
+        "visit": "v207",
+        "item": "i3",
+        "price": 19,
+        "available": true,
+        "shown_at": 28
+      },
+      {
+        "visit": "v207",
+        "item": "i4",
+        "price": 22,
+        "available": true,
+        "shown_at": 28
+      },
+      {
+        "visit": "v208",
+        "item": "i5",
+        "price": 26,
+        "available": true,
+        "shown_at": 29
+      },
+      {
+        "visit": "v209",
+        "item": "i1",
+        "price": 15,
+        "available": true,
+        "shown_at": 30
+      },
+      {
+        "visit": "v209",
+        "item": "i2",
+        "price": 18,
+        "available": true,
+        "shown_at": 30
+      },
+      {
+        "visit": "v209",
+        "item": "i3",
+        "price": 21,
+        "available": true,
+        "shown_at": 30
+      },
+      {
+        "visit": "v209",
+        "item": "i4",
+        "price": 24,
+        "available": true,
+        "shown_at": 30
+      },
+      {
+        "visit": "v210",
+        "item": "i1",
+        "price": 13,
+        "available": true,
+        "shown_at": 31
+      },
+      {
+        "visit": "v210",
+        "item": "i2",
+        "price": 16,
+        "available": true,
+        "shown_at": 31
+      },
+      {
+        "visit": "v210",
+        "item": "i3",
+        "price": 19,
+        "available": true,
+        "shown_at": 31
+      },
+      {
+        "visit": "v210",
+        "item": "i4",
+        "price": 22,
+        "available": true,
+        "shown_at": 31
+      },
+      {
+        "visit": "v211",
+        "item": "i1",
+        "price": 14,
+        "available": false,
+        "shown_at": 32
+      },
+      {
+        "visit": "v211",
+        "item": "i2",
+        "price": 17,
+        "available": true,
+        "shown_at": 32
+      },
+      {
+        "visit": "v211",
+        "item": "i3",
+        "price": 20,
+        "available": true,
+        "shown_at": 32
+      },
+      {
+        "visit": "v211",
+        "item": "i4",
+        "price": 23,
+        "available": true,
+        "shown_at": 32
+      },
+      {
+        "visit": "v212",
+        "item": "i5",
+        "price": 27,
+        "available": true,
+        "shown_at": 33
+      },
+      {
+        "visit": "v213",
+        "item": "i1",
+        "price": 13,
+        "available": true,
+        "shown_at": 34
+      },
+      {
+        "visit": "v213",
+        "item": "i2",
+        "price": 16,
+        "available": true,
+        "shown_at": 34
+      },
+      {
+        "visit": "v213",
+        "item": "i3",
+        "price": 19,
+        "available": true,
+        "shown_at": 34
+      },
+      {
+        "visit": "v213",
+        "item": "i4",
+        "price": 22,
+        "available": true,
+        "shown_at": 34
+      },
+      {
+        "visit": "v214",
+        "item": "i1",
+        "price": 14,
+        "available": true,
+        "shown_at": 35
+      },
+      {
+        "visit": "v214",
+        "item": "i2",
+        "price": 17,
+        "available": true,
+        "shown_at": 35
+      },
+      {
+        "visit": "v214",
+        "item": "i3",
+        "price": 20,
+        "available": true,
+        "shown_at": 35
+      },
+      {
+        "visit": "v214",
+        "item": "i4",
+        "price": 23,
+        "available": true,
+        "shown_at": 35
+      },
+      {
+        "visit": "v215",
+        "item": "i1",
+        "price": 15,
+        "available": true,
+        "shown_at": 36
+      },
+      {
+        "visit": "v215",
+        "item": "i2",
+        "price": 18,
+        "available": true,
+        "shown_at": 36
+      },
+      {
+        "visit": "v215",
+        "item": "i3",
+        "price": 21,
+        "available": true,
+        "shown_at": 36
+      },
+      {
+        "visit": "v215",
+        "item": "i4",
+        "price": 24,
+        "available": true,
+        "shown_at": 36
+      },
+      {
+        "visit": "v216",
+        "item": "i5",
+        "price": 25,
+        "available": true,
+        "shown_at": 37
+      },
+      {
+        "visit": "v217",
+        "item": "i1",
+        "price": 14,
+        "available": true,
+        "shown_at": 38
+      },
+      {
+        "visit": "v217",
+        "item": "i2",
+        "price": 17,
+        "available": true,
+        "shown_at": 38
+      },
+      {
+        "visit": "v217",
+        "item": "i3",
+        "price": 20,
+        "available": true,
+        "shown_at": 38
+      },
+      {
+        "visit": "v217",
+        "item": "i4",
+        "price": 23,
+        "available": true,
+        "shown_at": 38
+      },
+      {
+        "visit": "v218",
+        "item": "i1",
+        "price": 15,
+        "available": true,
+        "shown_at": 39
+      },
+      {
+        "visit": "v218",
+        "item": "i2",
+        "price": 18,
+        "available": true,
+        "shown_at": 39
+      },
+      {
+        "visit": "v218",
+        "item": "i3",
+        "price": 21,
+        "available": true,
+        "shown_at": 39
+      },
+      {
+        "visit": "v218",
+        "item": "i4",
+        "price": 24,
+        "available": true,
+        "shown_at": 39
+      },
+      {
+        "visit": "v219",
+        "item": "i1",
+        "price": 13,
+        "available": true,
+        "shown_at": 40
+      },
+      {
+        "visit": "v219",
+        "item": "i2",
+        "price": 16,
+        "available": false,
+        "shown_at": 40
+      },
+      {
+        "visit": "v219",
+        "item": "i3",
+        "price": 19,
+        "available": true,
+        "shown_at": 40
+      },
+      {
+        "visit": "v219",
+        "item": "i4",
+        "price": 22,
+        "available": true,
+        "shown_at": 40
+      },
+      {
+        "visit": "v220",
+        "item": "i5",
+        "price": 26,
+        "available": true,
+        "shown_at": 41
+      },
+      {
+        "visit": "v221",
+        "item": "i1",
+        "price": 15,
+        "available": true,
+        "shown_at": 42
+      },
+      {
+        "visit": "v221",
+        "item": "i2",
+        "price": 18,
+        "available": true,
+        "shown_at": 42
+      },
+      {
+        "visit": "v221",
+        "item": "i3",
+        "price": 21,
+        "available": false,
+        "shown_at": 42
+      },
+      {
+        "visit": "v221",
+        "item": "i4",
+        "price": 24,
+        "available": true,
+        "shown_at": 42
+      },
+      {
+        "visit": "v222",
+        "item": "i1",
+        "price": 13,
+        "available": true,
+        "shown_at": 43
+      },
+      {
+        "visit": "v222",
+        "item": "i2",
+        "price": 16,
+        "available": true,
+        "shown_at": 43
+      },
+      {
+        "visit": "v222",
+        "item": "i3",
+        "price": 19,
+        "available": true,
+        "shown_at": 43
+      },
+      {
+        "visit": "v222",
+        "item": "i4",
+        "price": 22,
+        "available": true,
+        "shown_at": 43
+      },
+      {
+        "visit": "v223",
+        "item": "i1",
+        "price": 14,
+        "available": true,
+        "shown_at": 44
+      },
+      {
+        "visit": "v223",
+        "item": "i2",
+        "price": 17,
+        "available": true,
+        "shown_at": 44
+      },
+      {
+        "visit": "v223",
+        "item": "i3",
+        "price": 20,
+        "available": true,
+        "shown_at": 44
+      },
+      {
+        "visit": "v223",
+        "item": "i4",
+        "price": 23,
+        "available": true,
+        "shown_at": 44
+      },
+      {
+        "visit": "v224",
+        "item": "i5",
+        "price": 27,
+        "available": true,
+        "shown_at": 45
+      },
+      {
+        "visit": "v225",
+        "item": "i1",
+        "price": 13,
+        "available": false,
+        "shown_at": 46
+      },
+      {
+        "visit": "v225",
+        "item": "i2",
+        "price": 16,
+        "available": true,
+        "shown_at": 46
+      },
+      {
+        "visit": "v225",
+        "item": "i3",
+        "price": 19,
+        "available": true,
+        "shown_at": 46
+      },
+      {
+        "visit": "v225",
+        "item": "i4",
+        "price": 22,
+        "available": true,
+        "shown_at": 46
+      },
+      {
+        "visit": "v226",
+        "item": "i1",
+        "price": 14,
+        "available": true,
+        "shown_at": 47
+      },
+      {
+        "visit": "v226",
+        "item": "i2",
+        "price": 17,
+        "available": true,
+        "shown_at": 47
+      },
+      {
+        "visit": "v226",
+        "item": "i3",
+        "price": 20,
+        "available": false,
+        "shown_at": 47
+      },
+      {
+        "visit": "v226",
+        "item": "i4",
+        "price": 23,
+        "available": true,
+        "shown_at": 47
+      },
+      {
+        "visit": "v227",
+        "item": "i1",
+        "price": 15,
+        "available": true,
+        "shown_at": 48
+      },
+      {
+        "visit": "v227",
+        "item": "i2",
+        "price": 18,
+        "available": true,
+        "shown_at": 48
+      },
+      {
+        "visit": "v227",
+        "item": "i3",
+        "price": 21,
+        "available": true,
+        "shown_at": 48
+      },
+      {
+        "visit": "v227",
+        "item": "i4",
+        "price": 24,
+        "available": true,
+        "shown_at": 48
+      },
+      {
+        "visit": "v228",
+        "item": "i5",
+        "price": 25,
+        "available": true,
+        "shown_at": 49
+      },
+      {
+        "visit": "v229",
+        "item": "i1",
+        "price": 14,
+        "available": true,
+        "shown_at": 50
+      },
+      {
+        "visit": "v229",
+        "item": "i2",
+        "price": 17,
+        "available": true,
+        "shown_at": 50
+      },
+      {
+        "visit": "v229",
+        "item": "i3",
+        "price": 20,
+        "available": true,
+        "shown_at": 50
+      },
+      {
+        "visit": "v229",
+        "item": "i4",
+        "price": 23,
+        "available": true,
+        "shown_at": 50
+      },
+      {
+        "visit": "v230",
+        "item": "i1",
+        "price": 15,
+        "available": true,
+        "shown_at": 51
+      },
+      {
+        "visit": "v230",
+        "item": "i2",
+        "price": 18,
+        "available": true,
+        "shown_at": 51
+      },
+      {
+        "visit": "v230",
+        "item": "i3",
+        "price": 21,
+        "available": true,
+        "shown_at": 51
+      },
+      {
+        "visit": "v230",
+        "item": "i4",
+        "price": 24,
+        "available": true,
+        "shown_at": 51
+      },
+      {
+        "visit": "v230",
+        "item": "i6",
+        "price": 30,
+        "available": false,
+        "shown_at": 51
+      },
+      {
+        "visit": "v231",
+        "item": "i1",
+        "price": 13,
+        "available": true,
+        "shown_at": 52
+      },
+      {
+        "visit": "v231",
+        "item": "i2",
+        "price": 16,
+        "available": true,
+        "shown_at": 52
+      },
+      {
+        "visit": "v231",
+        "item": "i3",
+        "price": 19,
+        "available": true,
+        "shown_at": 52
+      },
+      {
+        "visit": "v231",
+        "item": "i4",
+        "price": 22,
+        "available": true,
+        "shown_at": 52
+      },
+      {
+        "visit": "v232",
+        "item": "i5",
+        "price": 26,
+        "available": true,
+        "shown_at": 53
+      },
+      {
+        "visit": "v233",
+        "item": "i1",
+        "price": 15,
+        "available": true,
+        "shown_at": 54
+      },
+      {
+        "visit": "v233",
+        "item": "i2",
+        "price": 18,
+        "available": true,
+        "shown_at": 54
+      },
+      {
+        "visit": "v233",
+        "item": "i3",
+        "price": 21,
+        "available": true,
+        "shown_at": 54
+      },
+      {
+        "visit": "v233",
+        "item": "i4",
+        "price": 24,
+        "available": true,
+        "shown_at": 54
+      },
+      {
+        "visit": "v234",
+        "item": "i1",
+        "price": 13,
+        "available": true,
+        "shown_at": 55
+      },
+      {
+        "visit": "v234",
+        "item": "i2",
+        "price": 16,
+        "available": true,
+        "shown_at": 55
+      },
+      {
+        "visit": "v234",
+        "item": "i3",
+        "price": 19,
+        "available": false,
+        "shown_at": 55
+      },
+      {
+        "visit": "v234",
+        "item": "i4",
+        "price": 22,
+        "available": true,
+        "shown_at": 55
+      },
+      {
+        "visit": "v235",
+        "item": "i1",
+        "price": 14,
+        "available": false,
+        "shown_at": 56
+      },
+      {
+        "visit": "v235",
+        "item": "i2",
+        "price": 17,
+        "available": true,
+        "shown_at": 56
+      },
+      {
+        "visit": "v235",
+        "item": "i3",
+        "price": 20,
+        "available": true,
+        "shown_at": 56
+      },
+      {
+        "visit": "v235",
+        "item": "i4",
+        "price": 23,
+        "available": true,
+        "shown_at": 56
+      },
+      {
+        "visit": "v235",
+        "item": "i6",
+        "price": 29,
+        "available": true,
+        "shown_at": 56
+      },
+      {
+        "visit": "v236",
+        "item": "i5",
+        "price": 27,
+        "available": true,
+        "shown_at": 57
+      },
+      {
+        "visit": "v237",
+        "item": "i1",
+        "price": 13,
+        "available": true,
+        "shown_at": 58
+      },
+      {
+        "visit": "v237",
+        "item": "i2",
+        "price": 16,
+        "available": true,
+        "shown_at": 58
+      },
+      {
+        "visit": "v237",
+        "item": "i3",
+        "price": 19,
+        "available": true,
+        "shown_at": 58
+      },
+      {
+        "visit": "v237",
+        "item": "i4",
+        "price": 22,
+        "available": true,
+        "shown_at": 58
+      },
+      {
+        "visit": "v238",
+        "item": "i1",
+        "price": 14,
+        "available": true,
+        "shown_at": 59
+      },
+      {
+        "visit": "v238",
+        "item": "i2",
+        "price": 17,
+        "available": false,
+        "shown_at": 59
+      },
+      {
+        "visit": "v238",
+        "item": "i3",
+        "price": 20,
+        "available": true,
+        "shown_at": 59
+      },
+      {
+        "visit": "v238",
+        "item": "i4",
+        "price": 23,
+        "available": true,
+        "shown_at": 59
+      },
+      {
+        "visit": "v239",
+        "item": "i1",
+        "price": 15,
+        "available": true,
+        "shown_at": 60
+      },
+      {
+        "visit": "v239",
+        "item": "i2",
+        "price": 18,
+        "available": true,
+        "shown_at": 60
+      },
+      {
+        "visit": "v239",
+        "item": "i3",
+        "price": 21,
+        "available": true,
+        "shown_at": 60
+      },
+      {
+        "visit": "v239",
+        "item": "i4",
+        "price": 24,
+        "available": false,
+        "shown_at": 60
+      }
+    ],
+    "items": [
+      {
+        "item": "i1",
+        "family": "常规",
+        "size": 2,
+        "launched_at": 1
+      },
+      {
+        "item": "i2",
+        "family": "常规",
+        "size": 3,
+        "launched_at": 1
+      },
+      {
+        "item": "i3",
+        "family": "常规",
+        "size": 1,
+        "launched_at": 1
+      },
+      {
+        "item": "i4",
+        "family": "精品",
+        "size": 2,
+        "launched_at": 1
+      },
+      {
+        "item": "i5",
+        "family": "精品",
+        "size": 3,
+        "launched_at": 1
+      },
+      {
+        "item": "i6",
+        "family": "精品",
+        "size": 1,
+        "launched_at": 50
+      }
+    ]
+  }
+}

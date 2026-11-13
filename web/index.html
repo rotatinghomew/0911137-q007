@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>门店选品试验室</title><link rel="stylesheet" href="/style.css"></head>
+<body>
+<header><span>本地分析应用</span><h1>门店选品试验室</h1><p id="description"></p></header>
+<main>
+<form id="filters"><label>分析时点 <input name="cutoff" type="number" required></label><label>业务范围 <select name="group"></select></label><button type="submit">更新分析</button></form>
+<p id="status" role="status">正在读取资料</p>
+<section aria-label="当前分析"><h2>当前资料摘要</h2><dl id="summary"></dl><ul id="notes"></ul><p id="digest"></p><div id="results" class="scroll"></div></section>
+<section aria-label="保存的分析"><h2>分析版本</h2><form id="save"><label>版本名称 <input name="title" required maxlength="100" value="经营讨论"></label><button type="submit">保存当前分析</button></form><ul id="history"></ul></section>
+<section aria-label="原始资料"><h2>资料查阅</h2><label>资料表 <select id="tables"></select></label><button id="source" type="button">查看资料</button><div id="raw" class="scroll"></div></section>
+</main><script src="/app.js" defer></script>
+</body></html>
