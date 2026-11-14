@@ -6,6 +6,24 @@
 <main>
 <form id="filters"><label>分析时点 <input name="cutoff" type="number" required></label><label>业务范围 <select name="group"></select></label><button type="submit">更新分析</button></form>
 <p id="status" role="status">正在读取资料</p>
+<section aria-label="选择模型"><h2>选择模型与可检验性</h2>
+<div id="model-metrics" class="cards"></div>
+<h3>模型口径与局限</h3><ul id="model-notes"></ul>
+<h3>商品共同可选支撑（次）</h3><div id="support" class="scroll"></div>
+<h3>模型检验</h3><div id="validation"></div>
+</section>
+<section aria-label="情景试算"><h2>撤下 / 上新 / 调价情景试算</h2>
+<form id="scenario-form">
+<fieldset><legend>撤下商品（可多选）</legend><div id="scenario-removals" class="chips"></div></fieldset>
+<fieldset><legend>调价（留空表示不变）</legend><div id="scenario-prices" class="grid-inputs"></div></fieldset>
+<fieldset><legend>上新商品</legend><div id="scenario-additions" class="grid-inputs"></div>
+<button id="add-row" type="button">增加一行上新</button></fieldset>
+<button type="submit">运行情景试算</button>
+</form>
+<p id="scenario-status" role="status"></p>
+<div id="scenario-result"></div>
+<div id="scenario-compare"></div>
+</section>
 <section aria-label="当前分析"><h2>当前资料摘要</h2><dl id="summary"></dl><ul id="notes"></ul><p id="digest"></p><div id="results" class="scroll"></div></section>
 <section aria-label="保存的分析"><h2>分析版本</h2><form id="save"><label>版本名称 <input name="title" required maxlength="100" value="经营讨论"></label><button type="submit">保存当前分析</button></form><ul id="history"></ul></section>
 <section aria-label="原始资料"><h2>资料查阅</h2><label>资料表 <select id="tables"></select></label><button id="source" type="button">查看资料</button><div id="raw" class="scroll"></div></section>
